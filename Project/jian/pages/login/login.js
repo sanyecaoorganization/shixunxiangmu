@@ -45,8 +45,8 @@ Page({
   },
 
   sb:function(e){
-    wx.switchTab({
-      url: '/pages/index/index'
+    wx.navigateTo({
+      url: '/pages/index1/index1'
     })
   },
   // //如果输入框不为空

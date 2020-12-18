@@ -28,19 +28,15 @@
       "disablePlugins": [],
       "outputPath": ""
     },
-    "enableEngineNative": false,
-    "bundle": false,
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
-    "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
-    "packNpmRelationList": [],
-    "minifyWXSS": true
+    "packNpmRelationList": []
   },
   "compileType": "miniprogram",
   "libVersion": "2.14.0",
-  "appid": "wx9daf2fc5cb012742",
+  "appid": "wx4c8aeb8e19fdfb1e",
   "projectname": "jian",
   "debugOptions": {
     "hidedInDevtools": []
@@ -51,21 +47,27 @@
   "simulatorPluginLibVersion": {},
   "condition": {
     "search": {
+      "current": -1,
       "list": []
     },
     "conversation": {
+      "current": -1,
       "list": []
     },
     "game": {
+      "current": -1,
       "list": []
     },
     "plugin": {
+      "current": -1,
       "list": []
     },
     "gamePlugin": {
+      "current": -1,
       "list": []
     },
     "miniprogram": {
+      "current": -1,
       "list": []
     }
   }
