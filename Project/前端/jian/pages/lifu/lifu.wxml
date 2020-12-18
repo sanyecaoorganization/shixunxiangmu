@@ -1,0 +1,49 @@
+<!--pages/lifu/lifu.wxml-->
+<!-- <text>pages/lifu/lifu.wxml</text> -->
+<view>
+  <view class="mo">
+    <!-- <navigator url="/pages/gengduo/gengduo" open-type="navigate"> -->
+      <p class="mor">出席场合</p>
+      <!-- <p class="more">更多></p> -->
+    <!-- </navigator> -->
+  </view>
+  <view class="container">
+    <view bindtap="hunDian" data-stylename="{{zyList1[1].stylename}}">
+      <!-- <navigator  url="/pages/photos/photos" open-type="navigate" > -->
+      <view class="hun1">
+        <image src="{{zyList1[1].pimage1}}" class="h1" mode="widthFix" />
+      </view>
+      <p class="h1w">出门</p>
+
+      <!-- </navigator> -->
+    </view>
+
+    <view bindtap="hunDian" data-stylename="{{zyList2[1].stylename}}">
+      <!-- <navigator  url="/pages/photos/photos" open-type="navigate"> -->
+      <view class="hun2">
+        <image src="{{zyList2[1].pimage1}}" class="h1" mode="widthFix" />
+      </view>
+      <p class="h2w">仪式</p>
+      <!-- </navigator> -->
+    </view>
+
+    <view bindtap="hunDian" data-stylename="{{zyList3[1].stylename}}">
+      <!-- <navigator  url="/pages/photos/photos" open-type="navigate"> -->
+      <view class="hun3">
+        <image src="{{zyList3[1].pimage1}}" class="h1" mode="widthFix" />
+      </view>
+      <p class="h3w">敬酒</p>
+      <!-- </navigator> -->
+    </view>
+
+    <view bindtap="hunDian" data-stylename="{{zyList4[1].stylename}}">
+      <!-- <navigator  url="/pages/photos/photos" open-type="navigate"> -->
+      <view class="hun4">
+        <image src="{{zyList4[1].pimage1}}" class="h1" mode="widthFix" />
+      </view>
+      <p class="h4w">回门</p>
+      <!-- </navigator> -->
+    </view>
+    
+  </view>
+</view>

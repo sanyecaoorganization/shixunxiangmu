@@ -1,0 +1,26 @@
+<!--pages/second/second.wxml-->
+<!-- <text>pages/second/second.wxml</text> -->
+<view>
+  <view class="fi">酒店导航</view>
+  <view class="se">
+    <image src="../../icon/dao.jpg" mode="widthFix" />
+  </view>
+
+  <!-- 地址 -->
+  <view class="map">
+    <map id="myMap" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" catchtap="getLoc"
+      show-location></map>
+  </view>
+  <view class="ph">
+    <view class="m">
+      <image class="man" src="../../icon/xinlang.png" mode="widthFix" />
+      <view catchtap='freeTell' class="mt">呼叫新郎</view>
+    </view>
+    <view class="w">
+      <image class="woman" src="../../icon/xinniang.png" mode="widthFix" />
+      <view catchtap='freeTell1' class="wt">呼叫新娘</view>
+    </view>
+  </view>
+
+  <view class="b" catchtap="next">下一步</view>
+</view>

@@ -1,0 +1,65 @@
+/* pages/clothes/clothes.wxss */
+.dianpu{
+  margin-top: 0rpx;
+  margin-bottom: 100rpx;
+
+}
+.dpkind{
+  width:320rpx;
+  height:550rpx;
+  display: inline-block;
+  border:1px solid gainsboro;
+  margin-left: 38rpx;
+  margin-top: 30rpx;
+  border-radius: 40rpx;
+  overflow: hidden;
+}
+.dpkind1 {
+  height:490rpx;
+  text-align: center;
+}
+.dpkind2 {
+  /* height:100rpx;
+  line-height: 100rpx; */
+  font-size:12px;
+  margin-left: 15rpx;
+  color:red;
+  /* text-align: center; */
+}
+
+/* .container{
+  width: 100%;
+  height: 100%;
+} */
+.nav {
+  /* border:1px solid red; */
+  height: 80rpx;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  line-height: 80rpx;
+  background: #f7f7f7;
+  font-size: 16px;
+  white-space: nowrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.nav-item {
+  padding-right: 40rpx;
+  display: inline-block;
+  text-align: center;
+}
+.nav-item.active{
+  color: rgb(236, 116, 18);
+}
+
+.dianpu{
+  position: absolute;
+  top:100rpx;
+  left:0px;
+  /* border:1px solid red; */
+  margin-bottom: 100rpx;
+}
+

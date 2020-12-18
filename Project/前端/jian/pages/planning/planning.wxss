@@ -1,0 +1,137 @@
+/* pages/planning/planning.wxss */
+.planning{
+  width: 100%;
+}
+.topplanning{
+  height: 300rpx;
+  width:100%;
+  background-color:#EFBABA;
+  position: absolute;
+}
+.topchildplan{
+  height: 110rpx;
+  width: 100%px;
+  text-align: center;
+  font-size: 45px; 
+  color:white;
+  font-weight: bolder;
+  font-family: monospace;
+  margin-top: 50rpx;
+
+}
+
+.bodyplanning{
+  width: 100%;
+  position: absolute;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  height:1200rpx;
+  background-color: white;
+  margin-top: 200rpx; 
+}
+
+.bpl{
+  width:100%;
+  margin-top: 80rpx;
+}
+
+.bdplanimg1{
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: 40rpx;
+}
+
+.bdplanword1{
+  margin-left: 20rpx;
+  font-size: 50rpx;
+  color: black;
+  position: relative;
+  bottom:12rpx;
+}
+.jian1{
+  width: 70rpx;
+  height: 70rpx;
+  margin-top: 40rpx;
+}
+.bdplanimg2{
+  width: 70rpx;
+  height: 70rpx;
+  margin-top: 37rpx;
+  margin-left: -5rpx;
+}
+
+.bdplanword2{
+  margin-left: 18rpx;
+  font-size: 50rpx;
+  color: black;
+  position: relative;
+  bottom:15rpx;
+}
+
+
+.li {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  font-size: 34rpx;
+  width: 92%;
+  padding: 0 5%;
+  height: 130rpx;
+  /* line-height: 135rpx; */
+  border-bottom: 1rpx solid #f1f1f1;
+  border-top: 1rpx solid #f1f1f1;
+}
+
+.li-lists{
+  height: 100rpx;
+  font-size: 40rpx;
+  /* border-bottom: 1rpx solid  rgb(196, 191, 191)!important; */
+  /* background-color: rgba(235, 233, 233, 0.356)!important; */
+  margin-left: 100rpx;
+  line-height: 2.5rem;
+}
+
+.check1{
+  width: 40rpx;
+  height: 40rpx;
+  /* background-color: coral; */
+  border-radius: 50%;
+  float: left;
+  margin-top: 30rpx;
+  border:1px solid gray;
+}
+.check2{
+  float: left;
+  margin-left: 20rpx;
+}
+
+.active-tag .check1{
+  background-color: #1bc50c;
+}
+
+.confirm1{
+  width: 550rpx;
+  height: 80rpx;
+  line-height: 2rem;
+  margin-top: 30rpx;
+  margin-bottom: 10rpx;
+}
+
+
+.bg-gray{
+    background-color: #ccc!important;
+    border-bottom: 1rpx solid  #fff!important;
+}
+
+.li .icon-xiala ,.icon-shangjiantou {
+  color: #999;
+  font-size: 28rpx;
+}
+
+.gray {
+  color: #8e8e8e;
+}
+
+.red {
+  color: #fe2e2e;
+}

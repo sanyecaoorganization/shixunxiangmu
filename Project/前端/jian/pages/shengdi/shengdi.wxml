@@ -1,0 +1,8 @@
+<!--pages/shengdi/shengdi.wxml-->
+<!-- <text>pages/shengdi/shengdi.wxml</text> -->
+<view class="ind_t"><text>蜜月圣地</text></view>
+  <view wx:for="{{list}}" wx:key="lid">
+    <image src="{{item.limage}}" mode="widthFix">
+    </image>
+    <view class="showImage">{{item.lname}}</view>
+  </view>

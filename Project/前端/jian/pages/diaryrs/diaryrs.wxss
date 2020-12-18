@@ -1,0 +1,86 @@
+/* pages/diaryrs/diaryrs.wxss */
+/* pages/diarys/diarys.wxss */
+.diarys{
+  width: 100%;
+}
+
+/* .xiaofei{
+  width: 100%;
+  height: 150rpx;
+  background-color: rgba(64, 224, 208, 0.137);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.xiaofei1{
+  width: 60%;
+  height: 150rpx;
+  background-color: coral;
+  margin-top: 20rpx;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  font-size: 70rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+.account-detail{
+  margin-top: 50rpx;
+  height: 100rpx;
+  padding: 0 30rpx;
+}
+
+.account-amount{
+  padding: 0 30rpx;
+}
+
+/* .inputdetail{
+  border-bottom: 1px solid gray;
+}
+.inputamount{
+  border-bottom: 1px solid gray;
+} */
+
+.add-one{
+  margin-top: 40rpx;
+}
+
+.account-list-text{
+  color:gray;
+  margin:30rpx 0 0 30rpx;
+}
+
+.account-list-all-amount{
+  color:gray;
+  align-self: flex-end;
+  margin:30rpx 0 0 30rpx;
+  font-size: 50rpx;
+  /* padding-right: 20rpx; */
+
+}
+
+
+.account-list{
+  width: 95%;
+  height: 80rpx;
+  color:gray;
+  margin:30rpx 0 0 20rpx;
+  display: flex;
+  flex-direction: row;
+  font-size: 40rpx;
+  border-bottom: 1px solid gray;
+}
+
+
+.account-list-detail{
+  flex:1;
+}
+
+
+.account-list-amount{
+  width: 200rpx;
+}

@@ -1,0 +1,68 @@
+<!--pages/diarycam/diarycam.wxml-->
+<!-- <text>pages/diarycam/diarycam.wxml</text> -->
+<view class="toppai">
+  <!-- <view class="toppai1">
+    <view class="toppai2">拍照记账</view>
+  </view> -->
+
+  <view class="bodypai">
+    <view class="headerpai">
+      <input type="text"  placeholder="添加备注" value="{{ add }}" bindinput="inputChange" bindconfirm="addTodoList" class="headerpai1" focus="{true}"/>
+    </view>
+    <view class="headpai" bindtap="goFront">
+      <image src="/icon/my/paizhaojilu.png" class="pai1"></image>
+      <text class="pai2">拍照记录，记账更轻松</text>
+    </view>
+    <view class="tian">
+      <view class="tian1" bindtap="addTodoList">添加</view>
+    </view>
+    
+  </view>
+
+  <!-- <view class="toppai1">
+    <view class="toppai2" bindtap="addTodoList">保存记录</view>
+  </view> -->
+
+  
+
+    <!-- <view style="margin:10rpx;">
+      <image  class="front" src="{{ frontSrc }}"></image>
+    </view> -->
+
+  <block wx:if="{{todolist.length}}">
+        <view class="todoslist">
+            <view class="item"  wx:for="{{todolist}}" bindtap="toggleToDoListen"
+            data-index="{{index}}">
+                <!-- <icon type="{{ item.state ? 'success' : 'circle'}}"/> -->
+                <view class="left1">
+                  <view class="toone">
+                    <image src="/icon/my/touxiang.png" class="zhaoxiao"></image>
+                    <text class="toword">{{item.content}}</text>
+                  </view>
+                  <view class="totwo">
+                    <image class="front" src="{{item.frontsrc}}"></image>
+                  </view>
+                </view>
+                <!-- <icon type="clear" size="16" catchtap="removeItemListen" data-index="{{index}}" class="tocuo"/> -->
+                <view class="shanchu" bindtap="removeItem" data-index-key="{{index}}" >
+                   删除
+                </view>
+            </view>
+            
+        </view>   
+        
+    </block>
+</view>
+
+
+
+<!-- <view class="container">
+  <camera device-position="back" style="width:100%;height:450rpx;" ></camera>
+  <button bindtap="takePhoto">拍照</button>
+</view>
+<view style="margin:10rpx;">
+  <image src="{{previewImagePath}}" mode="aspectFit"></image>
+</view>
+<view style="margin:10rpx;">
+  <image src="{{compressImagePath}}" mode="aspectFit"></image>
+</view> -->

@@ -1,0 +1,71 @@
+/* pages/second/second.wxss */
+.fi{
+  /* border:1px solid red; */
+  text-align: center;
+  font-size: 13px;
+}
+.se image{
+  width:100%;
+}
+.map{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  /* border:1px solid red; */
+}
+#myMap{
+  width:90%;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;   */
+  height:600rpx;
+}
+
+.m{
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  width:150rpx;
+  position: absolute;
+  top:950rpx;
+  left:170rpx;
+  /* border:1px solid red; */
+}
+.mt{
+  text-align: center;
+  font-size: 12px;
+  color:rgb(238, 150, 165)
+}
+.man{
+  display:block;
+  width:70rpx;
+  /* border:1px solid red; */
+  margin:0 auto;
+}
+.w{
+  width:150rpx;
+  position: absolute;
+  top:950rpx;
+  right:170rpx;
+}
+.wt{
+  text-align: center;
+  font-size: 12px;
+  color:rgb(238, 150, 165);
+}
+.woman{
+  display:block;
+  width:70rpx;
+  margin:0 auto;
+}
+.b{
+  position: absolute;
+  top:1100rpx;
+  left:550rpx;
+  width:150rpx;
+  height:60rpx;
+  text-align: center;
+  /* border:1px solid red; */
+  font-size: 13px;
+  color:rgb(238, 150, 165)
+}

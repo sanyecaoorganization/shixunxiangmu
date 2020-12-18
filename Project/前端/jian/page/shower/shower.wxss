@@ -1,0 +1,213 @@
+/* pages/shower/shower.wxss */
+page{
+  height: 100%;
+}
+/* 
+
+
+.list{
+   display: flex;
+   justify-content:center;
+   border-top: 1px solid gainsboro;
+}
+
+.sh_title{
+  width: 305rpx;
+  height:42px;
+  line-height: 42px;
+  text-align: center;
+
+}
+.sh_title text{
+  font-size:40rpx;
+  font-family: "宋体";
+  font-weight: 650;
+  color:gray;
+  padding:20rpx 0 15rpx;
+}
+.sh_title text.active{
+  color:black;
+  border-bottom:5rpx #f43 solid;
+}
+
+.sh_con{
+height: 100%;
+padding: 100rpx 0;
+background-color: rgba(240, 240, 240, 0.877);
+text-align: center;
+font-size: 60rpx;
+} */
+
+/*已发布 tab */
+.uplink {
+  width: 100%;
+  height: 100%;
+ }
+  
+ .scroll-top {
+  height: 100rpx;
+  line-height: 100rpx;
+  width: auto;
+  /* background-color: #fff5f5; */
+  border-top: 1px solid gainsboro;
+
+ }
+  
+ .top-item {
+  display: inline-block;
+  /* width: 65px; */
+  width: 380rpx;
+  text-align: center;
+  font-size: 34rpx;
+  /* color: #333; */
+  font-size:36rpx;
+  font-family: "宋体";
+  font-weight: 650;
+  color:gray;
+ }
+  
+ .active {
+  font-size: 40rpx;
+  color: rgb(216, 27, 27);
+  border-bottom:5rpx solid #f43;
+ }
+
+ /*背景  */
+.swiper {
+  padding-top: 40rpx;
+  /* padding: 50rpx 30rpx 10rpx 50rpx;
+  height: 100%; */
+  background-color: rgba(231, 231, 231, 0.747);
+  
+ }
+
+ /* 已提问 */
+.sh_con{
+   margin:40rpx 23rpx 40rpx 42rpx;
+   /* border:5rpx solid #f43; */
+}
+
+.style-roll{
+   padding:3px 0px;
+   background-color: white;
+}
+
+ .style-roll1{
+   background-color: white;
+   margin: 20rpx 40rpx 30rpx 35rpx;
+   padding:3px;
+ }
+
+ /* 个人 */
+.sty-mine{
+  width: 100%;
+}
+ .sty-img{
+   width:35px;
+   height:35px;
+   border-radius: 50%;
+   margin: 35rpx 13rpx 15rpx 20rpx;
+ }
+.sty-uname{
+  position: relative;
+  bottom:46rpx;
+  /* border:5rpx solid #f43; */
+}
+.hide{
+  width:20%;
+  display: none;
+  }
+  .show{
+    width:18%;
+    /* position: absolute;
+    right: 10rpx;
+    top:153rpx; */
+    float:right;
+    margin-left: 650rpx; 
+    margin-top: -35rpx;
+  display: block;
+  }
+  .show-button{
+    display: none;
+  }
+/* 标题 */
+.sty-title{
+  margin-left:20rpx;
+}
+
+/* 图片 */
+ .sty-img2{   
+    width: 100%;
+    height:70%;
+    margin:2rpx 20rpx 0rpx 1rpx;
+    padding:2rpx 10rpx 0rpx 2rpx;
+    /* border:5rpx solid #f43; */
+ }
+ .sty-img3{
+  width:100%;
+  height:35rpx;
+ }
+ .sty-postimg{
+   
+   width: 90%;   
+   /* height: 90%; */
+   margin-left: 20rpx;
+ }
+
+  /* 底部 */
+  .sty-bottom{
+    width: 100%;
+    color: rgb(196, 196, 196);
+    font-size: small;
+    text-align: center;
+  }
+
+  /* 已回答 */
+  .sty-question{
+    /* height:90rpx; */
+    /* padding-top: 15rpx; */
+   
+    padding:2px 20px 3px 2px;
+    border-bottom: 1px solid rgba(220, 220, 220, 0.938);
+  }
+.sty-quename{
+  width:80%;
+  line-height: auto;
+  font-size: 17px;
+  /* font-family: "宋体"; */
+  font-weight: 800;
+  /* margin: 17rpx; */
+  /* position: relative; */
+  /* bottom:30rpx; */
+  }
+
+  .sty-queicon{
+     position: absolute;
+     right:60rpx;
+  }
+  .sty-replyicon{
+    /* padding-bottom: 3px; */
+    /* margin-top: -3px; */
+    float:right;
+    line-height: auto;
+     position: relative;
+     right:-30rpx;
+     top:-28px;
+     /* border:1px solid red; */
+     /* top:5rpx; */
+  }
+  .sty-reply{
+    width:100%;
+    padding-bottom: 15rpx;
+  }
+  .sty-replyimg{
+    width:27px;
+    height:27px;
+    border-radius: 50%;
+    margin: 35rpx 13rpx 15rpx 20rpx;
+  }
+  .sty-replyname{
+    font-size:14px ;
+    position: relative;
+    bottom:30rpx;
+  }

@@ -1,0 +1,62 @@
+/* pages/cehua/cehua.wxss */
+.container{
+  width:100%;
+  margin: 0 auto;
+  /* border:1px solid red; */
+  padding-top: 0rpx;
+  padding-bottom: 0rpx;
+}
+.mo{
+  margin-bottom: 10rpx;
+}
+p{
+  display: inline-block;
+}
+.mor{
+  padding-left: 20rpx;
+}
+/* .more{
+  position: relative;
+  left:455rpx;
+  color:rgb(124, 120, 120);
+  font-size: 35rpx;
+  text-shadow: 1rpx 1rpx 2rpx rgb(167, 163, 163),2rpx 2rpx 2rpx rgb(199, 196, 196);
+} */
+.hun1{
+  width:100%;
+  height:280rpx;
+  /* border:1px solid rgb(214, 211, 211); */
+  overflow:hidden;
+}
+
+.h1{ 
+  position: relative; 
+  top:0rpx;
+  left:0rpx;
+  z-index:-1;  
+  /* Z-index 可用于将在一个元素放置于另一元素之后。  */
+}
+.h1w{
+  position: absolute;
+  left:600rpx;
+  top:100rpx;
+  color:white;
+}
+.h2w{
+  position: absolute;
+  left:600rpx;
+  top:380rpx;
+  color:white;
+}
+.h3w{
+  position: absolute;
+  left:600rpx;
+  top:660rpx;
+  color:white;
+}
+.h4w{
+  position: absolute;
+  left:550rpx;
+  top:930rpx;
+  color:white;
+}

@@ -1,0 +1,107 @@
+<!--pages/shower/shower.wxml-->
+<!-- <view class="list">
+  <view wx:for="{{list}}" wx:key="{{index}}" class="sh_title" bindtap='showTo' data-myindex="{{index}}">
+   <text bindtap="{{index==ishidden?'proshowTo':'repshowTo'}}" class="{{index==ishidden?'active':''}}">{{item}}</text> 
+  </view>
+</view>
+ -->
+<!-- <view class="list">
+  <view class="sh_title"  bindtap='proshowTo'>
+    <text>已提问 {{num1}}</text>
+  </view>
+  <view class="sh_title"  bindtap='showTo'> 
+    <text>已问答</text>
+  </view>
+</view>
+
+<view class="sh_con">
+  <view wx:for="{{listone}}" wx:key="{{item}}">
+   <view>
+     {{item.replycontent}}
+   </view>
+  {{item.uimage}}
+</view>
+</view> -->
+
+<!-- <block wx:for="{{listone}}" wx:key="id">
+    <view hidden="{{ishidden != index}}" class="sh_con">
+      <view> 
+       {{item.content}}
+      </view>
+    </view>
+</block> -->
+<view class="uplink">
+    <scroll-view scroll-x scroll-with-animation  scroll-left="{{scrollLefts}}" class="scroll-top" style="overflow:hidden;white-space:nowrap;">
+        <view class="top-item {{curIndex===index?'active':''}}" wx:for="{{list}}" wx:key="index" data-index="{{index}}" bindtap="{{curIndex===index?'proshowTo':'aftershowTo'}}">
+          
+            <text>{{item}}</text>
+          </view>
+          
+    </scroll-view>
+
+    <swiper class="swiper" style="height: {{clientHeight?clientHeight+'px':'auto'}}" current="{{curIndex}}" bindchange="changeScroll" duration="{{duration}}">
+      <block>
+      <!-- 已提问 -->
+      <swiper-item>
+        <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}" >
+          <view  wx:for="{{prolist2}}" wx:key="{{index}}" class="sh_con">       
+            <view class="sty2-tim">{{item.posttime}}</view>
+            <view class="style-roll">            
+               <view class="sty-mine">
+                  <image class="sty-img" src="{{item.uimage}}"></image>
+                  <text class="sty-uname">{{item.uname}}</text>  
+                    <text class="sty-queicon" bindtap="showButton" data-index="{{index}}">. . .</text>
+                  <view class="{{showIndex===index&&showView?'show':'show-button'}}">
+                    <button size="mini" bindtap='delPost' data-postid="{{item.postid}}">删除</button>
+                  </view>             
+                         
+               </view>
+               <view bindtap="detailTo" data-title="{{item.postcontent}}" data-postid="{{item.postid}}">
+                <view class="sty-title">{{item.postcontent}}</view> 
+                <view class="{{item.postimage !=null&&item.postimage!=''?'sty-img2':'sty-img3'}}">
+                <image class="sty-postimg" src=" {{item.postimage}}" mode="aspectFit "></image>
+               </view>  
+               </view>
+                          
+                <!-- {{item.poststyleid}} -->
+
+             </view>
+        </view>
+        <view class="sty-bottom"><text>~~~到底了(ૢ˃ꌂ˂ૢ)~~~</text></view>
+     </scroll-view>
+    </swiper-item>
+
+    <!-- 已回答 -->
+    <swiper-item >
+      <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}" >
+
+        <view wx:for="{{prolist}}" class="sty-blk">
+          <view  class="style-roll1" >
+            <view class="sty-question">
+              <!-- <image class="sty-img" src="{{item.upimage}}"></image> -->
+             <view class="sty-quename"><text >{{item.postcontent}}</text> </view> 
+              <!-- <text class="sty-queicon">></text> -->
+              <view class="sty-rep">
+                <text class="sty-replyicon" bindtap="showButton" data-index="{{index}}">. . .</text>
+                  <view class="{{showIndex===index&&showView?'show':'show-button'}}">
+                    <button size="mini" bindtap='delReply' data-replyid="{{item.replyid}}">删除</button>
+                  </view> 
+              </view>
+              
+            </view>          
+            <view class="sty-reply" bindtap="detailTo" data-title="{{item.postcontent}}" data-postid="{{item.postid}}">
+              <image class="sty-replyimg" src="{{item.uimage}}"></image>
+              <text class="sty-replyname">{{item.replycontent}}</text>
+            </view>
+             
+          </view>     
+       </view>
+       <view class="sty-bottom"><text>~~~到底了(ૢ˃ꌂ˂ૢ)~~~</text></view>
+     </scroll-view>
+     
+    </swiper-item>
+   
+  </block>
+        
+    </swiper>
+</view>

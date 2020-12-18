@@ -1,0 +1,57 @@
+<!--pages/talk/talk.wxml新婚圈-->
+
+<view class="page_hd">
+    <view>
+        <mp-searchbar bindselectresult="selectResult" search="{{search}}"
+        value="{{inputVal}}" focus="{{inputShowed}}"   bindinput="inputTyping" bindclear="hideInput"
+            ext-class="choose_style"
+        ></mp-searchbar>
+    </view>
+</view>
+
+
+
+<view class="page_nav">
+   
+    <view class="nav">
+        <view class="nav_con" bindtap="jumpall">全部</view>
+        <view wx:for="{{ list }}" wx:key="index" class="nav_con" bindtap='showTo' data-myindex="{{index}}" data-value="{{list[index]}}">
+        {{ item }}
+        </view>
+    </view>
+</view>
+<view class="page-black"></view>
+    <view class="page_qe">
+        <block wx:for="{{listone}}" wx:key="postid" >
+            <view class="nav_bls" >
+                <image wx:if='{{item.uimage}}'  src="{{item.uimage}}" class="bl_img" mode=" aspectFit"></image>                 
+                    <view class="bl_usr">                     
+                        {{item.uname}} 
+                        <text class="bl_tim">
+                        {{item.posttime}}
+                        </text> 
+                    </view>                          
+                    <view class="bl_tit">{{item.postcontent}} </view>
+                    <view  class=" {{item.postimage !=null&&item.postimage!='undefined'?'bl_mg':'bl_mg3'}}">
+                        <image wx:if='{{item.postimage}}' src="{{item.postimage}}" class="bl_img2" mode=" aspectFit" style="yourage"></image>                 
+                    </view>
+                    <view ><text class="{{item.poststyleid != undefined?'bl_nav':''}}">#{{list[item.poststyleid]}}</text> </view>
+                    <view class="bl-last"><image class="bl_lun" bindtap="detailTo" data-title="{{item.postcontent}}" data-postid="{{item.postid}}" src="/icon/pinglun.png" ></image></view>
+                    <!-- <view class="page-black"></view> -->
+                </view>  
+                
+        </block>
+        
+    </view> 
+    
+
+
+<movable-area class="movable-area">
+    <movable-view class="movable-view" direction="all" >
+        <!-- <image  src="../../icon/jia.png" animation="{{animPlus}}" bindtap="plus"></image>
+        <image src="/icon/share.png" class="img-style" animation="{{onShareAppMessage}}" bindtap="transpond"></image> -->
+        <image src="/icon/pen.png" class="page_btn" anima tion="{{animInput}}" bindtap="jumptest"></image>
+    </movable-view>
+  </movable-area>
+  
+

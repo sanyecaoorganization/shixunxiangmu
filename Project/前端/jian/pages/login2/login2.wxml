@@ -1,0 +1,18 @@
+<!--pages/login2/login2.wxml-->
+<!-- <text>pages/login2/login2.wxml</text> -->
+<view>
+  <view class="back">
+    <image src="http://m.qpic.cn/psc?/V51gGRBp3f1Y6e2WYQCi2qIqIj05OBnb/ruAMsa53pVQWN7FLK88i5oC5DItRxF7CnkaRZNqvcyAPMCBR1tcPkRvXOSisbfNMBYeWOHmolo2C.7*buOERg1VuWV94z3ucwtsubYSmAsw!/b&bo=6APzBugD8wYBCS4!&rf=viewer_4" class="backimg" />
+  </view>
+  <form bindsubmit="preData" style="margin:28rpx">
+    <view class="kuang">
+      <input type="text" bindinput="bindtel" name="title" value="{{inputValue}}" placeholder-style="color:white" placeholder="用户名"/>
+      <input type="tel" bindinput="binduser" name="content" value="{{inputValue1}}" placeholder-style="color:white" placeholder="电话号码" />
+      <input type="password" bindinput="bindnewpa" name="content" value="{{inputValue2}}" placeholder-style="color:white" placeholder="新密码" />
+      <input type="password" bindinput="bindsure" name="content" value="{{inputValue3}}" placeholder-style="color:white" placeholder="确认新密码" />
+    </view>
+    <button form-type="submit" class="log">确认注册
+    
+    </button>
+  </form>
+</view>

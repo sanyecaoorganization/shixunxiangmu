@@ -1,0 +1,71 @@
+/* pages/cehuajs/cehuajs.wxss */
+.ditu{
+  margin:0 auto;
+  width:500rpx;
+  height:100rpx;
+  background-color: white;
+  /* border:1px solid red; */
+  z-index:-1;  
+}
+
+.ditu image{ 
+  border-bottom:1px solid  rgb(194, 190, 190);
+  box-shadow: 0px 1px rgb(167, 166, 166),0px 3px rgb(219, 218, 218),0px 5px rgb(243, 241, 241);
+  position:absolute; 
+  top:350rpx;
+  left:600rpx;
+  width:60rpx;
+  height:100%;
+  /* Z-index 可用于将在一个元素放置于另一元素之后。  */
+}
+
+.dian{
+  position: relative; 
+  top:100rpx;
+  left:50rpx;
+  width:650rpx;
+  height:200rpx;
+  border:1px solid gray;
+  border-radius: 30rpx;
+}
+.dian1 image{
+  position: relative;
+  top:10rpx;
+  left:15rpx;
+  width:180rpx;
+}
+.dian2{
+  position: relative;
+  top:-160rpx;
+  left:230rpx;
+}
+.dian3{
+  position: relative;
+  top:-160rpx;
+  left:230rpx;
+}
+
+
+.dianpu{
+  margin-top: 200rpx;
+}
+.dpkind{
+  width:340rpx;
+  height:450rpx;
+  display: inline-block;
+  border:1px solid gainsboro;
+  margin-left: 20rpx;
+  margin-top: 30rpx;
+  border-radius: 40rpx;
+  overflow: hidden;
+}
+.dpkind1 {
+  height:350rpx;
+  text-align: center;
+}
+.dpkind2 {
+  /* height:100rpx;
+  line-height: 100rpx; */
+  font-size:12px;
+  text-align: center;
+}

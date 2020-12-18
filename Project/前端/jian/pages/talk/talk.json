@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+  "mp-searchbar": "weui-miniprogram/searchbar/searchbar",
+  "mp-dialog": "weui-miniprogram/dialog/dialog"
+  },
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#ddd"
+
+}

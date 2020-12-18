@@ -1,0 +1,57 @@
+<!--pages/diaryrs/diaryrs.wxml-->
+<!-- <text>pages/diaryrs/diaryrs.wxml</text> -->
+<!--pages/diarys/diarys.wxml-->
+<!-- <text>pages/diarys/diarys.wxml</text> -->
+<!--index.wxml-->
+<view class="diarys">
+  <!-- <view class="xiaofei">
+    <view class="xiaofei1">
+      <view>消费支出</view>
+    </view>
+    
+  </view> -->
+<form  catchsubmit="formSubmit" >
+  <view class="account-detail"> 
+    <input placeholder="送礼者姓名（请输入）" name="inputdetail"  type="text" class="inputdetail" value='{{form_infos}}'/>
+  </view>
+
+  <view class="account-amount"> 
+    <input placeholder="礼金数额（请输入）" name="inputamount" type="number" class="inputamount" value='{{form_infos}}'/>
+  </view>
+  
+  <view class="add-one">
+    <button formType="submit" type="primary" loading="{{buttonLoadings}}"> 记一笔 </button>
+  </view>
+</form>
+
+
+<view  class="account-list-all-amount">
+  <text>合计：￥{{accountTotals}}</text>
+</view>
+
+<view  class="account-list-text">
+  <text>礼金详情:</text>
+</view>
+
+<view class="zhangback">
+<block wx:for="{{accountDatas}}" >
+  <view class="account-list">
+    <view class="account-list-detail">
+      {{item.detail}}
+    </view>
+
+    <view class="account-list-amount">
+      ￥{{item.amount}}
+    </view>
+
+    <view class="account-list-del">
+         <icon type="clear" size="18" data-index-key="{{index}}" bindtap="deleteRow" />
+        <!-- <button size="mini"  type="warn"  data-index-key="{{index}}"  bindtap="deleteRow" >删除</button> -->
+    </view>
+
+    </view>
+</block>
+</view>
+
+
+</view>

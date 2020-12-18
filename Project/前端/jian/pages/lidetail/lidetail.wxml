@@ -1,0 +1,68 @@
+<!--pages/lidetail/lidetail.wxml-->
+<!-- <text>pages/lidetail/lidetail.wxml</text> -->
+<view class="container">
+  <view class="swiper-container">
+    <!-- 轮播里面 -->
+    <!-- 用户拨动才会变 -->
+    <!-- 背景 -->
+    <swiper class="swiper0" duration="0" current="{{swiperCurrent}}">
+      <block wx:for="{{background}}" wx:key="idx"  wx:for-index="idx">
+        <swiper-item>
+          <image src="{{item.pimage1}}" class="swiper-item0" mode="widthFix" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 图片 -->
+  <view class="fu">
+    <swiper class="swiper" duration="1000" current="{{swiperCurrent}}" bindchange="swiperChange" circular="true"
+      previous-margin="110rpx" next-margin="110rpx">
+      <block wx:for="{{background}}"  wx:key="idx"  wx:for-index="idx">
+        <swiper-item>
+          <!-- <view class="swiper-item {{item}}"></view> -->
+          <image src="{{item.pimage1}}" class="swiper-item{{index == swiperCurrent ? ' active' : ''}}" mode="widthFix"
+            id="{{index}}" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <!-- 白板 -->
+    <view >   
+      <!-- style='height:"{{imgheight1}}rpx"' -->
+    <swiper class="bai" duration="0" current="{{swiperCurrent}}" >
+      <block wx:for="{{background}}"  wx:key="idx"  wx:for-index="idx">
+        <swiper-item>
+          <view class="location">{{item.name}}</view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+    <!-- 还差一个该婚纱摄影的全方位 -->
+    <swiper class="det" duration="0" current="{{swiperCurrent}}" >
+      <block wx:for="{{background}}"  wx:key="idx"  wx:for-index="idx">
+        <swiper-item>
+          <image src="{{item.pimage1}}" class="url1" mode="widthFix" />
+          <image src="{{item.pimage2}}" class="url1" mode="widthFix" />
+          <image src="{{item.pimage3}}" class="url1" mode="widthFix" />
+          <image src="{{item.pimage4}}" class="url1" mode="widthFix" />
+          <image src="{{item.pimage5}}" class="url1" mode="widthFix" />
+          <image src="{{item.pimage6}}" class="url1" mode="widthFix" />
+          <image src="{{item.pimage7}}" class="url1" mode="widthFix" />
+        </swiper-item>
+      </block>
+     
+    </swiper>
+  </view>
+</view>
+<view class="dian">
+  <viem class="dian1"><image src="{{background[0].shopimage}}" mode="widthFix"/></viem>
+  <view class="dian2">店铺名字{{imgheight1}}</view>
+  <view class="dian3">{{background[0].shopname}}</view>
+</view>
+<view class="wei" >
+  <!-- 我点击收藏的时候，获取上一个页面的pimage1和name -->
+  <view class="ws" data-nowid="{{swiperCurrent}}" bindtap="sc">
+    <image class="save " src="{{isClick?'../../icon/shoucang1.png':'../../icon/shoucang.png'}}" mode="widthFix"></image>
+    <text class="saveText">{{isClick?'已收藏':'收藏'}}</text>
+  </view>
+  <view class="wz" bindtap="hunDian" data-shopid="{{background[0].shopid}}" data-weidu="{{background[0].weidu}}" data-jingdu="{{background[0].jingdu}}" data-shopname="{{background[0].shopname}}" data-shopaddress="{{background[0].shopaddress}}">咨询作品详细信息</view>
+</view>

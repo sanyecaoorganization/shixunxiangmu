@@ -1,0 +1,31 @@
+<!--pages/introduce/introduce.wxml-->
+<!-- <text>pages/introduce/introduce.wxml</text> -->
+<view class="topin">
+  <view class="topin1">
+    <image src="/icon/my/jianli.png" class="topins1"></image>
+  </view>
+  <view class="topin2">
+    <text>简 礼</text>
+  </view>
+</view>
+
+<view class="bodyin">
+  <view class="bodyin1">建议反馈指引：</view>
+  <view class="bodyin2">若您在使用“简礼”功能过程中遇到问题或有其他咨询建议，请拨打以下电话获取帮助或反馈问题：</view>
+  <view class="bodyin3">19832102354</view>
+  <view class="bodyin4">我们会认真关注并为您解决。</view>
+</view>
+
+<view class="bottomin">
+  <view class="bottomin1">
+    <text class="bottomins1">建议反馈</text>
+    &&
+    <text class="bottomins1">联系我们</text>
+  </view>
+  <view class="bottomin2">
+    All shall be well,jack shall have jill.
+  </view>
+  <view class="bottomin3">
+    jianli@2020-12-18
+  </view>
+</view>

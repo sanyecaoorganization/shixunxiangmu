@@ -1,0 +1,29 @@
+<!--pages/clothes/clothes.wxml-->
+<!-- <text>pages/clothes/clothes.wxml</text> -->
+
+
+<view class="container">
+  <!-- tab导航栏 -->
+  <!-- scroll-left属性可以控制滚动条位置 -->
+  <!-- scroll-with-animation滚动添加动画过渡 -->
+  <scroll-view scroll-x="true" class="nav" scroll-left="{{navScrollLeft}}" scroll-with-animation="{{true}}">
+    <block wx:for="{{type}}" wx:for-index="idx" wx:for-item="navItem" wx:key="idx">
+      <view class="nav-item {{currentTab == idx ?'active':''}}" data-current="{{idx}}"
+        data-dname="{{navItem.dname}}" bindtap="switchNav">{{navItem.dname}}</view>
+    </block>
+  </scroll-view>
+ 
+  <view class="dianpu">
+
+    <view class="dpkind" wx:for="{{spallp}}" wx:key="id"  wx:for-index="idx">
+
+        <view bindtap="readDetail" data-id="{{item.pnum}}" data-shopid="{{item.shopid}}" data-styleid="{{item.styleid}}" data-current="{{idx}}">
+          <image src="{{item.pimage1}}" class="dpkind1" mode="heightFix" />
+        </view>
+        <view class="dpkind2" bindtap="readDetail" data-id="{{item.pnum}}" data-shopid="{{item.shopid}}"
+          data-styleid="{{item.styleid}}">
+          #{{item.stylename}}#{{item.dname}}
+        </view>
+      </view>
+  </view>
+</view>

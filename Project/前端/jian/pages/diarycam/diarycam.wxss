@@ -1,0 +1,156 @@
+/* pages/diarycam/diarycam.wxss */
+page{
+  background-color: rgba(231, 231, 231, 0.747);
+}
+.toppai{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: white; */
+}
+
+.toppai1{
+  width: 80%;
+  height: 100rpx;
+  background-color: #f15959f9 ;
+  text-align: center;
+  color: white;
+  margin-top: 50rpx;
+  font-size: 60rpx;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toppai2{
+  font-size: 50rpx;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+}
+
+.bodypai{
+  width: 100%;
+  height: 200rpx;
+  margin-top: 10rpx;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  background-color: white;
+}
+.headerpai{
+  height: 80rpx;
+  margin-top: 20rpx;
+}
+.headerpai1{
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+}
+
+.headpai{
+  width: 70%;
+  height: 100rpx;
+  /* border: 1px solid gray; */
+  /* margin-top: 10rpx; */
+  margin-left: 20rpx;
+  float: left;
+}
+.tian{
+  width: 15%;
+  height: 60rpx;
+  float: left;
+  background-color: rgba(0, 0, 255, 0.603);
+  color: white;
+  font-size:40rpx ;
+  margin-left: 70rpx;
+  margin-top: 25rpx;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tian1{
+  margin-top: 5rpx;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+
+}
+
+.pai1{
+  width: 100rpx;
+  height: 100rpx;
+}
+.pai2{
+  color: rgba(0, 0, 255, 0.719);
+  margin-left: 20rpx;
+  font-size: 40rpx;
+  position: relative;
+  top: -30rpx;
+}
+
+.join{
+  width: 50rpx;
+  height: 50rpx;
+}
+.todoslist{
+  margin-top: 15rpx;
+  width: 100%;
+  height: 320rpx;
+  /* background-color: cornflowerblue; */
+}
+.item{
+  height: 320rpx;
+  /* width: 90%; */
+  /* border: 1px solid black; */
+  border-bottom: 4px solid lightgrey;
+  /* margin-top: 20rpx; */
+  background-color: white;
+ 
+}
+
+.left1{
+  width: 80%;
+  float: left;
+}
+.toone{
+  height: 55rpx;
+}
+.zhaoxiao{
+  width: 80rpx;
+  height: 80rpx;
+  margin-top: 15rpx;
+  margin-left: 20rpx;
+}
+.toword{
+  margin-left: 20rpx;
+  font-size: 50rpx;
+  position: relative;
+  top: -25rpx;
+  color: gray;
+}
+
+.totwo{
+  width: 350rpx;
+  height: 200rpx;
+  margin-top: 45rpx;
+  margin-left: 80rpx;
+}
+
+.front{
+  width: 350rpx;
+  height: 200rpx;
+  margin-left: 40rpx;
+}
+
+.shanchu{
+  width: 15%;
+  height: 55rpx;
+  background-color: lightgrey;
+  float: left;
+  color: gray;
+  font-size: 40rpx;
+  text-align: center;
+  margin-top: 30rpx;
+  border-radius: 5px;
+}

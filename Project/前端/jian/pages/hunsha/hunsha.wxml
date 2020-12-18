@@ -1,0 +1,50 @@
+<!--pages/hunsha/hunsha.wxml-->
+
+<!-- 还剩一个收藏，还有详情页面的长度要自适应。还有每个详情页面的中间要为点进的那一个页面 -->
+<view>
+  <view class="mo">
+    <navigator url="/pages/gengduo/gengduo" open-type="navigate">
+      <p class="mor">推荐拍摄地</p>
+      <p class="more">更多></p>
+    </navigator>
+  </view>
+  <view class="container">
+    <view bindtap="hunDian" data-stylename="{{zyList1[1].stylename}}">
+      <!-- <navigator  url="/pages/photos/photos" open-type="navigate" > -->
+      <view class="hun1">
+        <image src="{{zyList1[1].pimage1}}" class="h1" style=" border-radius:20px;" mode="widthFix" />
+      </view>
+      <p class="h1w">胡同</p>
+
+      <!-- </navigator> -->
+    </view>
+
+    <view bindtap="hunDian" data-stylename="{{zyList2[1].stylename}}">
+      <!-- <navigator  url="/pages/photos/photos" open-type="navigate"> -->
+      <view class="hun1">
+        <image src="{{zyList2[1].pimage1}}" class="h1" mode="widthFix" />
+      </view>
+      <p class="h2w">马场</p>
+      <!-- </navigator> -->
+    </view>
+
+    <view bindtap="hunDian" data-stylename="{{zyList3[1].stylename}}">
+      <!-- <navigator  url="/pages/photos/photos" open-type="navigate"> -->
+      <view class="hun1">
+        <image src="{{zyList3[1].pimage1}}" class="h1" mode="widthFix" />
+      </view>
+      <p class="h3w">角楼</p>
+      <!-- </navigator> -->
+    </view>
+
+    <view bindtap="hunDian" data-stylename="{{zyList4[1].stylename}}">
+      <!-- <navigator  url="/pages/photos/photos" open-type="navigate"> -->
+      <view class="hun1">
+        <image src="{{zyList4[1].pimage1}}" class="h1" mode="widthFix" />
+      </view>
+      <p class="h4w">789艺术园</p>
+      <!-- </navigator> -->
+    </view>
+    
+  </view>
+</view>

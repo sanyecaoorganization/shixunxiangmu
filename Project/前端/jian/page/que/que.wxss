@@ -1,0 +1,106 @@
+/* page/que/que.wxss */
+.btn2{
+  float:right;
+  top:3px;
+  right: 5px;
+  color:white;
+  font-size: 10px;
+  font-family: '宋体';
+  border-radius: 1rem;
+  background-color: rgba(255, 0, 0, 0.842);
+}
+.inp{
+  height:35px;
+  margin: 10px 2px;
+  font-family: '宋体';
+  border-bottom: 1px solid rgba(128, 128, 128, 0.603);
+}
+.inpp{
+  margin-left: 2%;
+  width:96%;
+  height:338px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.616);
+}
+.inpp .pho{
+  position: relative;
+  bottom: -60px;
+  /* left:20px; */
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  border:1px dotted rgba(128, 128, 128, 0.432);
+}
+.phoo{
+  width:20px;
+  height:20px;
+  padding:20px;
+  line-height: 20px;
+}
+.inpp .imags{
+  position: relative;
+  top:30px;
+  /* left:20px; */
+  width: 70px;
+  height: 70px;
+  background-color: white;
+}
+.imag{
+  width: 70px;
+  height: 70px;
+  
+}
+
+/* 标签 */
+.interestsCategories{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.tagcon{
+  width: 100%;
+  font-weight: 100;
+  text-align: center;
+  color:gray;
+  opacity: 10%;
+}
+.tagContainer{
+  /* width: 22%; */
+  margin: 7px;
+}
+
+.tag{
+  /* padding: 0px 8px; */
+  padding: 29rpx 33rpx;
+  height:58rpx;
+  line-height: 13rpx;
+  /* color:rgba(255, 0, 0, 0.432); */
+  border-radius: 1.2rem;
+  color:white;
+  /* background-color:	#dddbdd; */
+  opacity: 0.6;
+  float: left;
+  margin: 20rpx;
+ font-weight: 100;
+ font-size: 1.0 rem;
+  text-align: center;
+  box-sizing: border-box;
+  /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); */
+  animation: heart 1.3s ease-in-out 2.7s infinite alternate;
+  background: linear-gradient( 0%, 20%, 50%,70%)
+}
+
+.active{
+  animation: none;
+  transform: scale(1.1);
+  opacity: 1.0;
+  transition: transform linear 0.5s;
+  font-size: 0.9rem;
+  font-family: "宋体";
+  /* background-color:red; */
+
+}
+@keyframes heart{
+from{transform:translate(0,0)}
+to{transform:translate(0,6px)}
+}

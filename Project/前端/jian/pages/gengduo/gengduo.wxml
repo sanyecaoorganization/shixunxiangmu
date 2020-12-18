@@ -1,0 +1,46 @@
+<!--pages/gengduo/gengduo.wxml-->
+
+<view class="container">
+  <!-- tab导航栏 -->
+  <!-- scroll-left属性可以控制滚动条位置 -->
+  <!-- scroll-with-animation滚动添加动画过渡 -->
+  <scroll-view scroll-x="true" class="nav" scroll-left="{{navScrollLeft}}" scroll-with-animation="{{true}}">
+    <block wx:for="{{navData1}}" wx:for-index="idx" wx:for-item="navItem" wx:key="idx">
+      <view class="nav-item {{currentTab == idx ?'active':''}}" data-current="{{idx}}"
+        data-stylename="{{navItem.stylename}}" bindtap="switchNav">{{navItem.stylename}}</view>
+    </block>
+  </scroll-view>
+  <!-- 页面内容 -->
+  <!-- <swiper class="tab-box" current="{{currentTab}}" duration="300" bindchange="switchTab">
+    <swiper-item wx:for="{{[0,1,2,3,4,5,6,7,8]}}" wx:for-item="tabItem" wx:for-index="idx" wx:key="idx"
+      class="tab-content">
+      {{tabItem}}{{name}}{{spall}}
+    </swiper-item>
+  </swiper> -->
+  <view class="dianpu">
+    <view class="dpkind" wx:for="{{spallp}}" wx:key="id">
+        <view bindtap="readDetail" data-id="{{item.pid}}" data-shopid="{{item.shopid}}" data-styleid="{{item.styleid}}">
+          <image src="{{item.pimage1}}" class="dpkind1" mode="heightFix" />
+        </view>
+        <view class="dpkind2" bindtap="readDetail" data-id="{{item.pid}}" data-shopid="{{item.shopid}}"
+          data-styleid="{{item.styleid}}">
+          {{item.name}}
+        </view>
+      </view>
+  </view>
+</view>
+
+<!-- <view class="zongfu">
+  <view class="fuzi" bindtap="fu">全部</view>
+  <view class="dianpu">
+    <view class="dpkind" wx:for="{{spall}}" wx:key="id">
+        <view bindtap="readDetail" data-id="{{item.pid}}" data-shopid="{{item.shopid}}" data-styleid="{{item.styleid}}">
+          <image src="{{item.pimage1}}" class="dpkind1" mode="heightFix" />
+        </view>
+        <view class="dpkind2" bindtap="readDetail" data-id="{{item.pid}}" data-shopid="{{item.shopid}}"
+          data-styleid="{{item.styleid}}">
+          {{item.name}}
+        </view>
+      </view>
+  </view> 
+</view> -->

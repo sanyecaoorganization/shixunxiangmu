@@ -1,0 +1,81 @@
+/* pages/content/content.wxss */
+page{
+  height:100%;
+}
+.container{
+  background-color: rgba(161, 23, 21);
+}
+.next{
+  position: absolute;
+  bottom:30rpx;
+  left:430rpx;
+  font-size: 12px;
+  color:white;
+}
+.backimg{ 
+  position:absolute; 
+  top:0rpx;
+  left:0rpx;
+  width:100%;
+  height:100%;
+  z-index:-1;  
+  /* Z-index 可用于将在一个元素放置于另一元素之后。  */
+}
+.fr{
+  position: absolute;
+  top: 40rpx;
+  left:50rpx;
+  /* border:1px solid red; */
+}
+.fr input{
+  width:270px;
+  margin-top: 20rpx;
+  color:white;
+  height:65rpx;
+  font-size:13px;
+  border-radius: 20rpx;
+  padding-left: 30rpx;
+  background-color: rgba(255,255,255,0.4);
+}
+/* .tupian{
+  position: absolute;
+  top: 550rpx;
+  left:50rpx;
+  width:80px;
+  margin-top: 30rpx;
+  color:white;
+  height:70rpx;
+  border-radius: 20rpx;
+  text-align: center;
+  background-color: rgba(255,255,255,0.4);
+} */
+.weui-uploader{
+  position: absolute;
+  top:590rpx;
+  left:20rpx;
+}
+.pic {
+  float:left;
+  position:relative;
+  margin-right:15rpx;
+  margin-bottom:15rpx;
+  }
+.weui-uploader__img{
+  width:225rpx;
+  height:225rpx;
+  display: inline-block;
+  /* float: left; */
+}
+.delete-btn{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.upload-img-btn{
+  margin-top: 20rpx;
+}
+.log{
+  margin-top:20rpx;
+  background-color: rgba(255,255,255,0.4);
+  color:white;
+}

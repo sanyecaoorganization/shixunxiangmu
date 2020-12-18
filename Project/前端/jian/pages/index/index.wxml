@@ -1,0 +1,90 @@
+<!--index.wxml-->
+<view>
+  <view class="address">
+    <view bindtap="choose"><image src="../../icon/dingwei.png" mode="widthFix"/></view>
+    <view id="address">{{city}}</view>
+    <!-- <navigator url="/pages/shoucang/shoucang" open-type="navigate">
+     收藏
+    </navigator> -->
+  </view>
+  <view class="container">
+    <navigator class="photo" url="/pages/hunsha/hunsha" open-type="navigate">
+      <image src="../../icon/sheying.png" mode="heightFix" />
+      <text>婚纱摄影</text>
+    </navigator>
+
+    <navigator class="plan" url="/pages/cehua/cehua" open-type="navigate">
+      <image src="../../icon/cehua.png" mode="heightFix"></image>
+      <text>婚礼策划</text>
+    </navigator>
+
+    <navigator class="dress" url="/pages/lifu/lifu" open-type="navigate">
+      <image src="../../icon/xuanlifu.png" mode="heightFix"></image>
+      <text>婚纱礼服</text>
+    </navigator>
+    <!-- 搞一个全部商家 -->
+    <view class="qing" bindtap="dianzi">
+      <image src="../../icon/yaoqing.png" mode="heightFix"></image>
+      <text>电子请帖</text>
+    </view>
+    <!-- <navigator class="qing" url="/pages/content/content" open-type="navigate">
+      <image src="../../icon/yaoqing.png" mode="heightFix"></image>
+      <text>电子请帖</text>
+    </navigator> -->
+    <navigator class="mi" url="/pages/shengdi/shengdi" open-type="navigate">
+      <image src="../../icon/jingdian.png" mode="heightFix"></image>
+      <text>蜜月圣地</text>
+    </navigator>
+  </view>
+
+  <view class="shaixuan">
+    <!-- tab导航栏 -->
+    <!-- scroll-left属性可以控制滚动条位置 -->
+    <!-- scroll-with-animation滚动添加动画过渡 -->
+    <scroll-view scroll-x="true" class="nav" scroll-left="{{navScrollLeft}}" scroll-with-animation="{{true}}">
+      <block wx:for="{{navData1}}" wx:for-index="idx" wx:for-item="navItem" wx:key="idx">
+        <view class="nav-item {{currentTab == idx ?'active':''}}" data-current="{{idx}}"
+          data-typename="{{navItem.typename}}" bindtap="switchNav">{{navItem.typename}}</view>
+      </block>
+    </scroll-view>
+
+    <view class="dianpu">
+      <view class="dpkind" wx:for="{{spallp}}" wx:key="id">
+        <view bindtap="readDetail" data-shopid="{{item.shopid}}" data-weidu="{{item.weidu}}" data-jingdu="{{item.jingdu}}" data-shopname="{{item.shopname}}" data-shopaddress="{{item.shopaddress}}" data-typeid="{{item.typeid}}"> 
+          <image src="{{item.shopimage}}" class="dpkind1" mode="heightFix" />
+        </view>
+        <view class="dpkind2" bindtap="readDetail"  data-shopid="{{item.shopid}}">
+          {{item.shopname}}
+        </view>
+        <view class="dpkind3" bindtap="readDetail"  data-shopid="{{item.shopid}}">
+          Tel：{{item.shoptel}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->

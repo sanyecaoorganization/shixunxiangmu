@@ -1,0 +1,57 @@
+<!--page/answer/answer.wxml-->
+
+<view class="ans">
+  <!-- <text>问题详情</text> -->
+<view class="ans_title"><h1>{{ansContent}}</h1></view>
+
+</view>
+
+<!-- //回答问题 -->
+
+<!-- 回复 -->
+<view wx:for="{{replyList}}" wx:key="replyid" class="detail">
+  <view class="det_title">
+    <image src="{{item.uimage}}" class="bl_img" mode=" aspectFit"></image>    
+   <view class="det_usr"><text>{{item.uname}}</text> </view> 
+  </view>
+  <view class="det_con">
+    <text class="det_content" contenteditable="true" >{{item.replycontent}}</text>
+  </view>
+  <view class="{{item.replyimage !=null&&item.postimage!='undefined'?'det_mg':'det_mg3'}}">
+    <image wx:if='{{item.replyimage}}' src="{{item.replyimage}}" class="det_img2" mode=" aspectFit" style="yourage"></image>                  
+  </view>
+  <view class="bl_tim">{{item.replytime}} </view>
+</view>
+<view>
+<button  open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="ans_btn" bindtap="fabiao">
+      回答问题
+    </button>
+  <!-- <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block> -->
+</view>
+
+
+<view class='zhezhao' hidden="{{flag}}">
+  </view>
+  <!--这是下拉框中的内容，一个文本框和一个按钮，按钮触发拉起事件，表示拉起下拉框-->
+  <view class="test3 {{test=='test1'?'test1':'test2'}}" style='display:{{yesorno}};'>
+    <view class='input-content'>
+      <textarea class='ta' placeholder="亲亲，有何要说的么？" bindinput="contentInput" auto-focus data-photo="{{imagePath}}"/>
+    </view>
+    <view class="pho">
+      
+      <image src="../../icon/pho.png" class="phoo" bindtap="insertImage"></image>
+      <image class="imag" src="{{imagePath}}" ></image>
+    </view>
+  
+      <button class='btn' bindtap='laqi'>发表</button>
+      <mp-dialog title="发表" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{[{text: '取消'}, {text: '确认'}]}}">
+      <view>确认要发表吗？</view>
+      </mp-dialog>
+   
+   
+    <button class='btn1' bindtap='laq'>取消</button>
+  </view>
+

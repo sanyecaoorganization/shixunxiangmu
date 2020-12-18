@@ -1,0 +1,23 @@
+<!--pages/photos/photos.wxml-->
+<!-- 此处我想的是，前者是点击的胡同、马场等图片进入。在p元素中有特定的class
+里面包裹着不同的文字。在此处，可以获取前者胡同、马场文字，相当于点击不同的
+图片内容，该页面进行不同的店铺显示。首先就是上面综述需要变 -->
+
+<view>
+  <view>
+    <view>{{location}}</view>
+  </view>
+ 
+  <view class="dianpu">
+    <view class="dpkind" wx:for="{{Listp}}" wx:key="idx"  wx:for-index="idx">
+      <view bindtap="readDetail" data-id="{{item.pid}}" data-shopid="{{item.shopid}}" data-styleid="{{item.styleid}}" data-current="{{idx}}">
+        <image src="{{item.pimage1}}" class="dpkind1" mode="heightFix" />
+      </view>
+      <view class="dpkind2" bindtap="readDetail" data-id="{{item.pid}}" data-shopid="{{item.shopid}}"
+        data-styleid="{{item.styleid}}">
+        {{item.name}}
+      </view>
+    </view>
+
+  </view>
+</view>

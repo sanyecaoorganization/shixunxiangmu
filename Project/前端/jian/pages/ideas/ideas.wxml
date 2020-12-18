@@ -1,0 +1,19 @@
+<!--pages/ideas/ideas.wxml-->
+<!-- <text>pages/ideas/ideas.wxml</text> -->
+<view>
+  <view>
+    <view>{{location}}</view>
+  </view>
+  <view class="dianpu">
+    <view class="dpkind" wx:for="{{Listp}}" wx:key="idx"  wx:for-index="idx">
+      <view bindtap="readDetail" data-id="{{item.pid}}" data-shopid="{{item.shopid}}" data-styleid="{{item.styleid}}" data-current="{{idx}}">
+        <image src="{{item.pimage1}}" class="dpkind1" mode="heightFix" />
+      </view>
+      <view class="dpkind2" bindtap="readDetail" data-id="{{item.pid}}" data-shopid="{{item.shopid}}"
+        data-styleid="{{item.styleid}}">
+        {{item.name}}
+      </view>
+    </view>
+
+  </view>
+</view>

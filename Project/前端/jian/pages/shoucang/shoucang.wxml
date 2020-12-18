@@ -1,0 +1,24 @@
+<!--pages/shoucang/shoucang.wxml-->
+<!-- <text>pages/shoucang/shoucang.wxml</text> -->
+<view class="dianpu">
+  <view class="kind">
+    <view class="dpkind" wx:for="{{scList}}" wx:key="id">
+      <view wx:if="{{item.typeid !== 3}}">
+        <view bindtap="readDetail" data-id='{{item.id}}' data-typeid="{{item.typeid}}">
+          <image src="{{item.image}}" class="dpkind1" mode="heightFix" />
+        </view>
+      </view>
+
+      <view wx:elif="{{item.typeid == 3}}">
+        <view class="spe" bindtap="readDetail" data-id='{{item.id}}' data-typeid="{{item.typeid}}">
+          <image src="{{item.image}}" class="dpkind11" mode="widthFix" />
+        </view>
+      </view>
+      
+      <view class="dpkind2" bindtap="readDetail" data-id='{{item.id}}' data-typeid="{{item.typeid}}">
+        {{item.name}}
+      </view>
+      <view class="dpkind3" bindtap="dele" data-uid="{{item.uid}}" data-id="{{item.id}}" data-typeid="{{item.typeid}}">删除</view>
+    </view>
+  </view>
+</view>

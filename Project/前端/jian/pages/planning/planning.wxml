@@ -1,0 +1,151 @@
+<!--pages/planning/planning.wxml-->
+<!-- <text>pages/planning/planning.wxml</text> -->
+<view class="planning">
+  <view class="topplanning">
+    <view class="topchildplan">
+      Love Plan
+    </view>
+  </view>
+
+  <view class="bodyplanning">
+    <view class="bpl">
+      <view class="li" data-index="0" bindtap='changeToggle'>
+        <view class="left">
+          <image src="/icon/my/jihua.png" class="bdplanimg1"></image>
+          <text class="bdplanword1">前期准备</text>
+        </view>
+        <view class="right"> 
+          <image src="{{selectedFlag[0]?'/icon/my/jianshang.png':'/icon/my/jianxia.png'}}" class="jian1"></image>
+        </view>
+      </view>
+      <view hidden="{{!selectedFlag[0]}}">
+        <block wx:for="{{items}}" wx:for-item="item" wx:for-index="index" >
+          <view class="li-lists {{item.state==1?'active-tag':''}}" bindtap="checkbtn" data-key='{{index}}'>
+            <view class="check1"></view>
+            <view class="check2">{{item.content}}</view>
+          </view>
+        </block>
+        <!-- <view><button class="confirm1" bindtap="confirm">确定完成</button></view> -->
+      </view>
+
+      <view class="li" data-index="1" bindtap='changeToggle'>
+        <view class="left">
+          <image src="/icon/my/paizhao.png" class="bdplanimg2"></image>
+          <text class="bdplanword2">拍婚纱照</text>
+        </view>
+        <view class="right">
+          <image src="{{selectedFlag[1]?'/icon/my/jianshang.png':'/icon/my/jianxia.png'}}" class="jian1"></image>
+        </view>
+      </view>
+      <view hidden="{{!selectedFlag[1]}}">
+        <block wx:for="{{items1}}" wx:for-item="item" wx:for-index="index">
+          <view class="li-lists {{item.state==1?'active-tag':''}}" bindtap="checkbtn1" data-key='{{index}}'>
+            <view class="check1"></view>
+            <view class="check2">{{item.content}}</view>
+          </view>
+        </block>
+        <!-- <view><button class="confirm1" bindtap="confirm">确定完成</button></view> -->
+      </view>
+
+      <view class="li" data-index="2" bindtap='changeToggle'>
+        <view class="left">
+          <image src="/icon/my/changdi.png" class="bdplanimg2"></image>
+          <text class="bdplanword2">选订场地</text>
+        </view>
+        <view class="right">
+          <image src="{{selectedFlag[1]?'/icon/my/jianshang.png':'/icon/my/jianxia.png'}}" class="jian1"></image>
+        </view>
+      </view>
+      <view hidden="{{!selectedFlag[2]}}">
+        <block wx:for="{{items2}}" wx:for-item="item" wx:for-index="index">
+          <view class="li-lists {{item.state==1?'active-tag':''}}" bindtap="checkbtn2" data-key='{{index}}'>
+            <view class="check1"></view>
+            <view class="check2">{{item.content}}</view>
+          </view>
+        </block>
+        <!-- <view><button class="confirm1" bindtap="confirm">确定完成</button></view> -->
+      </view>
+
+      
+      <view class="li" data-index="3" bindtap='changeToggle'>
+        <view class="left">
+          <image src="/icon/my/shixiang.png" class="bdplanimg2"></image>
+          <text class="bdplanword2">婚庆事项</text>
+        </view>
+        <view class="right">
+          <image src="{{selectedFlag[1]?'/icon/my/jianshang.png':'/icon/my/jianxia.png'}}" class="jian1"></image>
+        </view>
+      </view>
+      <view hidden="{{!selectedFlag[3]}}">
+        <block wx:for="{{items3}}" wx:for-item="item" wx:for-index="index">
+          <view class="li-lists {{item.state==1?'active-tag':''}}" bindtap="checkbtn3" data-key='{{index}}'>
+            <view class="check1"></view>
+            <view class="check2">{{item.content}}</view>
+          </view>
+        </block>
+        <!-- <view><button class="confirm1" bindtap="confirm">确定完成</button></view> -->
+      </view>
+
+      <view class="li" data-index="4" bindtap='changeToggle'>
+        <view class="left">
+          <image src="/icon/my/hunsha.png" class="bdplanimg2"></image>
+          <text class="bdplanword2">挑选婚纱</text>
+        </view>
+        <view class="right">
+          <image src="{{selectedFlag[1]?'/icon/my/jianshang.png':'/icon/my/jianxia.png'}}" class="jian1"></image>
+        </view>
+      </view>
+      <view hidden="{{!selectedFlag[4]}}">
+        <block wx:for="{{items4}}" wx:for-item="item" wx:for-index="index">
+          <view class="li-lists {{item.state==1?'active-tag':''}}" bindtap="checkbtn4" data-key='{{index}}'>
+            <view class="check1"></view>
+            <view class="check2">{{item.content}}</view>
+          </view>
+        </block>
+        <!-- <view><button class="confirm1" bindtap="confirm">确定完成</button></view> -->
+      </view>
+
+      <view class="li" data-index="5" bindtap='changeToggle'>
+        <view class="left">
+          <image src="/icon/my/cart.png" class="bdplanimg2"></image>
+          <text class="bdplanword2">购买婚品</text>
+        </view>
+        <view class="right">
+          <image src="{{selectedFlag[1]?'/icon/my/jianshang.png':'/icon/my/jianxia.png'}}" class="jian1"></image>
+        </view>
+      </view>
+      <view hidden="{{!selectedFlag[5]}}">
+        <block wx:for="{{items5}}" wx:for-item="item" wx:for-index="index">
+          <view class="li-lists {{item.state==1?'active-tag':''}}" bindtap="checkbtn5" data-key='{{index}}'>
+            <view class="check1"></view>
+            <view class="check2">{{item.content}}</view>
+          </view>
+        </block>
+        <!-- <view><button class="confirm1" bindtap="confirm">确定完成</button></view> -->
+      </view>
+
+      <view class="li" data-index="6" bindtap='changeToggle'>
+        <view class="left">
+          <image src="/icon/my/chongci.png" class="bdplanimg2"></image>
+          <text class="bdplanword2">婚前冲刺</text>
+        </view>
+        <view class="right">
+          <image src="{{selectedFlag[1]?'/icon/my/jianshang.png':'/icon/my/jianxia.png'}}" class="jian1"></image>
+        </view>
+      </view>
+      <view hidden="{{!selectedFlag[6]}}">
+        <block wx:for="{{items6}}" wx:for-item="item" wx:for-index="index">
+          <view class="li-lists {{item.state==1?'active-tag':''}}" bindtap="checkbtn6" data-key='{{index}}'>
+            <view class="check1"></view>
+            <view class="check2">{{item.content}}</view>
+          </view>
+        </block>
+        <!-- <view><button class="confirm1" bindtap="confirm">确定完成</button></view> -->
+      </view>
+
+
+
+    </view>
+  </view>
+</view>
+

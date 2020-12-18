@@ -1,0 +1,284 @@
+/* pages/message/message.wxss */
+.backmessage{
+  background-color: rgb(235, 235, 235) ;
+  height: 1500rpx;
+}
+.zong-msg{
+  background-color: rgb(235, 235, 235) ;
+
+}
+.msg-uname{
+  background-color: white;
+  width: 100%;
+  height: 120rpx;
+}
+
+.msg-uname1{
+  font-size: 40rpx;
+  position: absolute;
+  top: 35rpx;
+  color: black;
+  margin-left: 20rpx;
+}
+
+.msg-uname2{
+  font-size: 45rpx;
+  position: absolute;
+  top: 35rpx;
+  color: gray;
+  margin-left: 75%;
+}
+
+.msg-uimage{
+  background-color: white;
+  width: 100%;
+  height: 150rpx;
+  margin-top: 20rpx;
+}
+
+.msg-uimage1{
+  font-size: 40rpx;
+  color: black;
+  margin-left: 20rpx;
+  position: absolute;
+  top: 185rpx;
+}
+
+.msg-uimage2 {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  margin-left: 73%;
+  position: absolute;
+  top: 155rpx;
+
+}
+
+.msg-uimage3 {
+  margin-left: 92%;
+  position: absolute;
+  color: gray;
+  top: 170rpx;
+  font-size:60rpx;
+}
+.msg-uSex{
+  background-color: white;
+  width: 100%;
+  height: 120rpx;
+  margin-top: 20rpx;
+}
+
+.msg-uSex1{
+  font-size: 40rpx;
+  color: black;
+  margin-left: 20rpx;
+  position: absolute;
+  top: 340rpx;
+}
+
+.msg-uSex2 {
+  font-size: 45rpx;
+  position: absolute;
+  top: 335rpx;
+  color: gray;
+  margin-left: 80%;
+
+}
+
+.msg-uSex3 {
+  margin-left: 92%;
+  position: absolute;
+  color: gray;
+  top:325rpx;
+  font-size:60rpx;
+}
+
+
+
+.msg-uAge{
+  background-color: white;
+  width: 100%;
+  height: 120rpx;
+  margin-top: 20rpx;
+}
+
+.msg-uAge1{
+  font-size: 40rpx;
+  position: absolute;
+  top: 480rpx;
+  color: black;
+  margin-left: 20rpx;
+}
+.msg-uAge2 {
+  font-size: 45rpx;
+  position: absolute;
+  top: 480rpx;
+  color: gray;
+  margin-left: 80%;
+
+}
+.msg-uAge3{
+  position: absolute;
+  top: 465rpx;
+  color: gray;
+  margin-left: 92%;
+  font-size:60rpx;
+}
+
+.msg-uaddress{
+  background-color: white;
+  width: 100%;
+  height: 120rpx;
+  margin-top: 20rpx;
+}
+
+.msg-uaddress1{
+  font-size: 40rpx;
+  position: absolute;
+  top: 615rpx;
+  color: black;
+  margin-left: 20rpx;
+}
+
+.msg-uaddress2{
+  position: absolute;
+  top: 600rpx;
+  color: gray;
+  margin-left: 92%;
+  font-size:60rpx;
+}
+
+.msg-uphone{
+  background-color: white;
+  width: 100%;
+  height: 120rpx;
+  margin-top: 20rpx;
+}
+
+.msg-uphone1{
+  font-size: 40rpx;
+  position: absolute;
+  top: 755rpx;
+  color: black;
+  margin-left: 20rpx;
+}
+
+.msg-uphone2{
+  font-size: 40rpx;
+  position: absolute;
+  top: 755rpx;
+  color: gray;
+  margin-left: 60%;
+}
+
+.msg-cancel{
+  background-color: white;
+  width: 100%;
+  height: 120rpx;
+  margin-top: 20rpx;
+}
+
+.msg-cancel1{
+  font-size: 40rpx;
+  position: absolute;
+  top: 890rpx;
+  color: black;
+  margin-left: 20rpx;
+}
+
+.msg-cancel2{
+  position: absolute;
+  top: 875rpx;
+  color: gray;
+  margin-left: 92%;
+  font-size:60rpx;
+}
+
+.baocun{
+  margin-top: 50rpx;
+  background-color: rgba(255, 255, 255, 0.849);
+  color:gray;
+}
+
+
+
+
+/* .info-cont{
+  border-top:solid 1px #f0f0f0;
+  padding-top: 30rpx;
+  display: flex;
+  flex-direction: column;
+
+}
+.infoMain{
+  border-bottom:solid 1px #f0f0f0;
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+  margin-bottom: 30rpx;
+}
+.info-items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:20rpx 40rpx;
+  border-top:solid 1px #f0f0f0;
+
+}
+.infotext{
+  display: flex;
+  align-items: center;
+}
+.userinfo-avatar {
+width: 128rpx;
+height: 128rpx;
+margin: 0 20rpx;
+border-radius: 50%;
+}
+.info-motto{
+   margin: 0 20rpx;
+   color:#888;
+}
+.buttonExit{
+  margin:0 40rpx;
+}
+
+
+.topImg{
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  justify-content: center;
+}
+.topImg-item{
+  width: 700rpx;
+  height: 200rpx;
+  display: flex 
+}
+
+.t-i-left{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+}
+.t-i-right{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center
+}
+.t-i-right .image{
+  width: 135rpx;
+  height: 135rpx;
+  background: #FFFFFF;
+  border: 2rpx solid #E5E5E5;
+  border-radius: 50%;
+}
+.t-i-right .image image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+} */

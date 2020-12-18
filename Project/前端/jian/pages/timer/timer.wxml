@@ -1,0 +1,46 @@
+
+<!-- !--倒计时-- -->
+<view class='dataspan'>
+    <view class='calendar_title flex_nowrap'>
+      <view class='icon' bindtap='lastMonth'>{{" < "}}</view>
+    <view class='yearandmonth'>{{year}}年{{month}}月</view>
+    <view class='icon' bindtap='nextMonth'>{{">"}}</view>
+    </view>
+
+    <view class='calendar'>
+      <view class='header'>
+        <view wx:for='{{date}}' wx:key='' class='{{(index == todayIndex) && isTodayWeek ? "weekMark" : ""}}'>{{item}}
+          <view></view>
+        </view>
+      </view>
+
+      <view class='date-box'>
+        <block wx:for='{{dateArr}}' wx:key='key'>
+          <view class='{{getDate == item.isToday ? "nowDay" : "setDay"}}' bindtap='do' data-key='{{item.isToday}}'>
+            <view class='date-head' bindtap='lookHuoDong' data-year='{{year}}' data-month='{{month}}' data-datenum='{{item.dateNum}}'>
+              <view>{{item.dateNum}}</view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+
+  <mp-dialog class="myLove" title="MyLove" show="{{dialogShow}}"           bindbuttontap="tapDialogButton" buttons="{{buttons}}" data-key="{{theDay}}"  >
+    设置您的婚期为:{{theDay}}吗
+  </mp-dialog>
+
+ 
+
+
+  
+  <!-- <view>距离您的婚礼还有:{{fardata}}天</view> -->
+  
+
+  <!-- //分享页面 -->
+  <!-- <view class='share'>
+
+   <view class='weixin'>
+       <button open-type="share" class='iconfont icon-weixin'><image src="../../icon/circle.png"></image></button>
+   </view>
+</view> -->

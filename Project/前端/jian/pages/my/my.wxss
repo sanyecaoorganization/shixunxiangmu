@@ -1,0 +1,338 @@
+/* pages/my/my.wxss */
+.back{
+  background-color: rgba(211, 211, 211, 0.2);
+  width: 100%;
+  height:1350rpx ;
+}
+.top{
+  height: 300rpx;
+  width:100%;
+  background-color:#EFBABA;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  
+}
+.top1{
+  height: 110rpx;
+  width: 100%px;
+  text-align: center;
+  font-size: 100rpx; 
+  color:white;
+  font-weight: bolder;
+  font-family: monospace;
+  /* background-color: blueviolet; */
+}
+.top2{
+  text-align: center;
+  color:white;
+  font-size: 40rpx;
+  font-family:'楷体' ;
+  font-weight: bolder;
+}
+
+.tdata{
+  font-size: 55rpx;
+}
+.pen{
+  width: 35rpx;
+  height: 35rpx;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -25rpx;
+  
+}
+
+.userinfo-avatar {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.userinfo-nickname {
+  color: gray;
+}
+
+/* .userinfo {
+  display: flex;
+  width: 90%;
+  height: 190rpx;
+  margin-top: 5rpx;
+  background-color: rgba(255, 255, 255);
+  margin-left: 5%;
+  border-radius: 2%;
+}
+
+.userinfo-avatar {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+  border: 1px solid rgba(211, 211, 211, 0.425);
+}
+.userinfo-nickname {
+  color: gray;
+  margin-left: 20rpx;
+  margin-top: 60rpx;
+  font-size: 50rpx;
+} 
+.userinfo-nickname1 {
+  margin-left: 150rpx;
+  margin-top: 70rpx;
+  color: gray;
+} 
+.userinfo-nickname2 {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 10rpx;
+  margin-top: 75rpx;
+}  */
+
+.body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 175rpx; */
+  margin-top: 190rpx;
+}
+.body1{
+  width: 100%;
+  height:150rpx;
+  position: relative;
+  background-color:white;
+}
+
+
+
+
+.ch01{
+  width:130rpx;
+  float: left;
+  margin-left:40rpx ;
+  /* background-color: lightpink; */
+}
+
+.xiaoxi{
+  height:77rpx;
+  width:77rpx;
+  margin-left: 40rpx;
+  margin-top: 20rpx;
+
+}
+
+.ch02{
+  width:250rpx;
+  float: left;
+  margin-left: 20rpx;
+}
+.wxiaoxi{
+  margin-left: 45rpx;
+  font-size: 28rpx;
+  position: relative;
+  bottom:25rpx;
+}
+
+.shoucang{
+  height:80rpx;
+  width:80rpx;
+  margin-left: 140rpx;
+  margin-top: 16rpx;
+}
+
+
+
+.wshoucang{
+  margin-left: 140rpx;
+  font-size: 28rpx;
+  position: relative;
+  bottom:25rpx;
+}
+
+.shezhi{
+  height:77rpx;
+  width:77rpx;
+  margin-left: 120rpx;
+  margin-top: 18rpx;
+}
+
+.ch03{
+  width:220rpx;
+  float: left;
+  margin-left: 30rpx;
+}
+
+.wshezhi{
+  margin-left: 120rpx;
+  font-size: 28rpx;
+  position: relative;
+  bottom:25rpx;
+}
+
+.body2{
+  width: 100%;
+  height:120rpx;
+  position: relative;
+  margin-top: 25rpx;
+  /* border-radius: 20px; */
+  /* border:1px solid gainsboro; */
+  background-color:white;
+}
+
+.plans{
+  width: 80%;
+  height: 120rpx;
+  float: left;
+}
+.plan1{
+  width: 70rpx;
+  height: 70rpx;
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+}
+.plan2{
+  margin-left: 25rpx;
+  font-size: 45rpx;
+  color: gray;
+  position: relative;
+  top: -15rpx;
+}
+
+.plans1{
+  width: 10%;
+  float: left;
+  margin-left: 40rpx;
+}
+.plan3{
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 40rpx;
+}
+
+.body3{
+  width: 100%;
+  height:120rpx;
+  position: relative;
+  margin-top: 25rpx;
+  background-color:white;
+}
+
+.cost{
+  width: 80%;
+  height: 120rpx;
+  float: left;
+}
+.cost1{
+  width: 70rpx;
+  height: 70rpx;
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+}
+.cost2{
+  margin-left: 25rpx;
+  font-size: 45rpx;
+  color: gray;
+  position: relative;
+  top: -15rpx;
+}
+
+.costs{
+  width: 10%;
+  float: left;
+  /* background-color: lightpink; */
+  margin-left: 40rpx;
+}
+.cost3{
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 40rpx;
+}
+
+
+.body4{
+  width: 100%;
+  height:120rpx;
+  position: relative;
+  margin-top: 25rpx;
+  /* border-radius: 20px; */
+  /* border:1px solid gainsboro; */
+  background-color:white;
+}
+
+.talk{
+  width: 80%;
+  height: 120rpx;
+  float: left;
+}
+.talk1{
+  width: 70rpx;
+  height: 70rpx;
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+}
+.talk2{
+  margin-left: 25rpx;
+  font-size: 45rpx;
+  color: gray;
+  position: relative;
+  top: -15rpx;
+}
+
+.talks{
+  width: 10%;
+  float: left;
+  /* background-color: lightpink; */
+  margin-left: 40rpx;
+}
+.talk3{
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 40rpx;
+}
+
+
+.body5{
+  width: 100%;
+  height:120rpx;
+  position: relative;
+  margin-top: 25rpx;
+  /* border-radius: 20px; */
+  /* border:1px solid gainsboro; */
+  background-color:white;
+}
+
+.connect{
+  width: 80%;
+  height: 120rpx;
+  float: left;
+}
+.connect1{
+  width: 70rpx;
+  height: 70rpx;
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+}
+.connect2{
+  margin-left: 25rpx;
+  font-size: 45rpx;
+  color: gray;
+  position: relative;
+  top: -15rpx;
+}
+
+.connects{
+  width: 10%;
+  float: left;
+  /* background-color: lightpink; */
+  margin-left: 40rpx;
+}
+.connect3{
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 40rpx;
+}

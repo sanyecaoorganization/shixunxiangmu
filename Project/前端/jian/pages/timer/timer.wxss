@@ -1,0 +1,126 @@
+/* pages/my/my.wxss */
+page {
+  background-color: #efefef;
+}
+.dataspan {
+  background: white;
+  width: 90%;
+  margin-left: 5%;
+  height: 480rpx;
+  margin-top: 50rpx;
+  border-radius: 25rpx;
+  overflow: hidden;
+}
+
+.calendar_title {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  font-size: 40rpx;
+  margin-top: 20rpx;
+}
+
+.yearandmonth {
+  margin: 0 20rpx;
+  color: black;
+  font-size: 30rpx;
+  margin-top: 10rpx;
+}
+
+.icon {
+  width: 60rpx;
+  height: 60rpx;
+  color: #35adae;
+}
+
+/* 日历 */
+
+.calendar {
+  width: 100%;
+  margin-top: 10rpx;
+  background: #fff;
+  border-bottom-right-radius: 20rpx;
+  border-bottom-left-radius: 20rpx;
+  padding: 0 0 20rpx;
+  font-family: FZZhunYuan-M02S;
+}
+
+.header {
+  font-size: 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header>view {
+  display: inline-block;
+  width: 14.285%;
+  font-size: 30rpx;
+  text-align: center;
+  padding: 20rpx 0;
+  color: #35adae;
+}
+
+.weekMark {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.weekMark view {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* border-bottom: 2px solid #35adae; */
+}
+
+.date-box {
+  font-size: 0;
+  padding: 10rpx 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.date-box>view {
+  position: relative;
+  display: inline-block;
+  width: 14.285%;
+  color: #666;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.date-head {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+}
+
+.nowDay .date-head {
+  width: 60rpx;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  background-color: #35adae;
+  margin: 0 auto;
+}
+
+.nowDay .date-head:hover{
+  background: linear-gradient(to bottom right, #009899 , #19b0d6);
+}
+.setDay .date-head:active{
+  text-align: center;
+  width: 60rpx;
+  border-radius: 50%;
+  color: white;
+  margin: 0 auto;
+  background: linear-gradient(to bottom right, #e62b2bc7 , #e93939b9);
+}
+
+.myLove{
+  color:rgba(255, 0, 0, 0.658);
+  font-size: 30px;
+  font-weight: 200;
+  font-family: "行体";
+}

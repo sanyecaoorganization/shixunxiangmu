@@ -1,0 +1,51 @@
+<!--pages/first/first.wxml-->
+
+<view class="container">
+  <view wx:if="{{music_url}}">
+    <view wx:if="{{isPlayingMusic}}">
+      <view class="background_music" bindtap="play">
+        <image src="../../icon/image/music_icon.png" class="musicImg music_icon" />
+        <image src="../../icon/image/music_play.png" class="music_play pauseImg" />
+      </view>
+    </view>
+    <view wx:else>
+      <view class="background_music" bindtap="play">
+        <image src="../../icon/image/music_icon.png" class="musicImg" />
+        <image src="../../icon/image/music_play.png" class="music_play playImg" />
+      </view>
+    </view>
+  </view>
+
+  <!-- <view class="ba">
+    <image src="http://m.qpic.cn/psc?/V51gGRBp3f1Y6e2WYQCi2qIqIj05OBnb/ruAMsa53pVQWN7FLK88i5oC5DItRxF7CnkaRZNqvcyAPMCBR1tcPkRvXOSisbfNMBYeWOHmolo2C.7*buOERg1VuWV94z3ucwtsubYSmAsw!/b&bo=6APzBugD8wYBCS4!&rf=viewer_4" class="backimg" />
+  </view> -->
+
+  <view wx:if="{{colle==0}}" class="ba">
+    <image bindtap="chudong" src="{{dress[0].image1}}" class="backimg" />
+  </view>
+  <view wx:elif="{{colle==1}}" class="ba">
+    <image bindtap="chudong1" src="{{dress[0].image2}}" class="backimg" />
+  </view>
+  <view wx:elif="{{colle==2}}" class="ba">
+    <image bindtap="chudong2" src="{{dress[0].image3}}" class="backimg" />
+  </view>
+
+
+
+  <view class="back" animation="{{ani}}">
+    <view class="kuang">
+      <view class="k1">新郎{{dress[0].groomname}} ♥ 新娘{{dress[0].bridename}}</view>
+      <view>
+        谨定于{{dress[0].time}}举办婚礼
+      </view>
+      <view>
+        诚邀您的到来
+      </view>
+      <view bindtap="nowMap" class="addr">
+        地址：{{dress[0].address}}
+      </view>
+
+    </view>
+  </view>
+
+</view>

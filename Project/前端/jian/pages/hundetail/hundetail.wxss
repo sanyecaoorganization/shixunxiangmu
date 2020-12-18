@@ -1,0 +1,140 @@
+/* pages/hundetail/hundetail.wxss */
+
+.swiper-container{
+  position: absolute;
+  top:0px;
+  left:0px;
+}
+.swiper-container .swiper0{
+  /* border:1px solid red; */
+  height:550rpx;
+  width:750rpx;
+}
+.swiper-item0{
+  opacity:0.5;
+}
+
+.swiper-container .swiper{
+  /* border:1px solid rgb(61, 60, 60); */
+  display: block;
+  width:780rpx;
+  height:412rpx;
+}
+.swiper-item{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  height: 350rpx;
+  margin-top:50rpx;
+  /* border:1px solid red; */
+}
+.active{
+  margin-top:0rpx;
+  height: 412rpx;
+ }
+.fu{
+  position: absolute;
+  width:780rpx;
+  top:120rpx;
+  left:0rpx;
+}
+.bai{
+  height:150rpx;
+  width:550rpx;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  border-bottom:1px solid rgb(151, 150, 150);
+  box-shadow: 0px 1px rgb(167, 166, 166),0px 3px rgb(219, 218, 218),0px 5px rgb(243, 241, 241);
+}
+.location{
+  /* border:1px solid red; */
+  height:60rpx;
+  overflow: hidden;
+  font-size:14px;
+  margin-top: 18rpx;
+}
+.changjing{
+  font-size:12px;
+}
+.det{
+  position: relative;
+  top:400rpx;
+  /* border:1px solid red; */
+  height:6500rpx;
+  /* height:100%; */
+}
+
+.det image{
+  position: relative; 
+  top:0rpx;
+  left:0rpx;
+  width:97%;
+  /* height:100%; */
+  z-index:-1; 
+}
+.dian{
+  position: relative; 
+  top:320rpx;
+  left:50rpx;
+  width:650rpx;
+  height:200rpx;
+  border:1px solid gray;
+  border-radius: 30rpx;
+}
+.dian1 image{
+  position: relative;
+  top:10rpx;
+  left:15rpx;
+  width:180rpx;
+}
+.dian2{
+  position: relative;
+  top:-160rpx;
+  left:230rpx;
+}
+.dian3{
+  position: relative;
+  top:-160rpx;
+  left:230rpx;
+}
+.wei{
+  position:fixed;
+  bottom:0px;
+  width:100%;
+  /* width:750rpx; */
+  height:90rpx;
+  background-color:white;
+  border-radius: 20rpx 20rpx 0 0;
+}
+.wei view{
+  display: inline-block;
+}
+.wz{
+  position: absolute;
+  bottom:15rpx;
+  left:260rpx;
+  background-color: rgb(245,218,77);
+  width:60%;
+  height:60rpx;
+  line-height: 60rpx;
+  /* margin-top: 15rpx; */
+  /* margin-left: 130rpx; */
+  text-align: center;
+  border-radius: 18rpx;
+  font-size: 12px;
+  /* border:1px solid red; */
+}
+
+.ws image{
+  position: relative;
+  top:20rpx;
+  /* border:1px solid red; */
+  left: 40rpx;
+  width:60rpx;
+}
+.ws text{
+  position: relative;
+  left:70rpx;
+  font-size:12px;
+  /* border:1px solid red; */
+}

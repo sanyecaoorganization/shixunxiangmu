@@ -1,0 +1,19 @@
+<!--pages/login1/login1.wxml-->
+<!-- <text>pages/login1/login1.wxml</text> -->
+<!-- 现在实现不要很严谨，只要点击修改密码，对应上电话和用户名，就会去修改，不要要验证是不是本人 -->
+<view>
+  <view class="back">
+    <image src="http://m.qpic.cn/psc?/V51gGRBp3f1Y6e2WYQCi2qIqIj05OBnb/ruAMsa53pVQWN7FLK88i5oC5DItRxF7CnkaRZNqvcyAPMCBR1tcPkRvXOSisbfNMBYeWOHmolo2C.7*buOERg1VuWV94z3ucwtsubYSmAsw!/b&bo=6APzBugD8wYBCS4!&rf=viewer_4" class="backimg" />
+  </view>
+  <form bindsubmit="preData" style="margin:28rpx">
+    <view class="kuang">
+      <input type="text" bindinput="bindtel" name="title" value="{{inputValue}}" placeholder-style="color:white" placeholder="用户名"/>
+      <input type="tel" bindinput="binduser" name="content" value="{{inputValue1}}" placeholder-style="color:white" placeholder="电话号码" />
+      <input type="password" bindinput="bindnewpa" name="content" value="{{inputValue2}}" placeholder-style="color:white" placeholder="新密码" />
+      <input type="password" bindinput="bindsure" name="content" value="{{inputValue3}}" placeholder-style="color:white" placeholder="确认新密码" />
+    </view>
+    <button form-type="submit" class="log">确认更改</button>
+  </form>
+</view>
+
+<!-- 点击确认更改之后，会出现一个修改成功的页面，之后跳转到登录页 -->

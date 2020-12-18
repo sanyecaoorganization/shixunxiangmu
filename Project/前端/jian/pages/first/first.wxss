@@ -1,0 +1,118 @@
+.background_music {
+  position: fixed;
+  top: 20rpx;
+  right: 10rpx;
+  z-index: 10001;
+  width: 100rpx;
+}
+
+.musicImg {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.music_icon {
+  animation: musicRotate 3s linear infinite;
+}
+
+.music_play {
+  width: 28rpx;
+  height: 60rpx;
+  margin-left: -5px;
+  transform-origin: top;
+  -webkit-transform: rotate(20deg);
+}
+
+.playImg {
+  animation: musicStop 1s linear forwards;
+}
+
+.pauseImg {
+  animation: musicStart 1s linear forwards;
+}
+
+@-webkit-keyframes musicRotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes musicStop {
+  from {
+    -webkit-transform: rotate(20deg);
+  }
+
+  to {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes musicStart {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(20deg);
+  }
+}
+
+.music_stop {
+  width: 4em;
+  display: none;
+}
+
+
+page{
+  height:100%;
+}
+.container{
+  height:100%;
+  width:100%;
+  background-color: rgba(161, 23, 21);
+}
+
+.backimg{ 
+  position:absolute; 
+  top:0rpx;
+  left:0rpx;
+  width:100%;
+  height:100%;
+  z-index:1;  
+  
+  /* Z-index 可用于将在一个元素放置于另一元素之后。  */
+}
+.back{
+  position: absolute;
+  top:670rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  width:90%;
+  /* width:660rpx; */
+  height:400rpx;
+  background-color:  rgba(255,255,255,0.8);
+  /* border:1px solid red; */
+  z-index:1; 
+}
+
+.kuang{
+  height:350rpx;
+  width:88%;
+  border:1px solid black;
+}
+.kuang view{
+  font-size:12px;
+  text-align: center;
+}
+.k1{
+  margin-top: 30rpx;
+  margin-bottom: 10rpx;
+}
+.addr{
+  margin-top: 20rpx;
+}

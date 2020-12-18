@@ -1,0 +1,13 @@
+<!--pages/third/third.wxml-->
+<!-- <text>pages/third/third.wxml</text> -->
+<view class="container">
+  <view class="bless_img">
+    <image src="../../icon/image/mail.png"/>
+  </view>
+ 
+  <view class="btn_zone">
+    <view class="share fr">
+      <button type="default" open-type="share" style='background-color:white;color:black'>分享</button>  
+    </view>
+  </view>
+</view>

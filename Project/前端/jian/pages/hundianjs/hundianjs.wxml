@@ -1,0 +1,27 @@
+<!--pages/hundianjs/hundianjs.wxml-->
+<!-- <text>pages/hundianjs/hundianjs.wxml</text> -->
+<!-- <view>
+  <viem class="dian1"><image src="{{background[0].shopimage}}" mode="widthFix"/></viem>
+  店铺:{{sp[0].shopname}}
+</view> -->
+<view class="dian">
+  <viem class="dian1"><image src="{{sp[0].shopimage}}" mode="widthFix"/></viem>
+  <view class="dian2">{{sp[0].shopname}}</view>
+  <view class="dian3">联系方式:{{sp[0].shoptel}}</view>
+</view>
+
+<view class="ditu" >
+  <image src="../../icon/dingwei.png" mode="widthFix" bindtap="diTu" data-weidu="{{sp[0].weidu}}" data-jingdu="{{sp[0].jingdu}}" data-shopname="{{sp[0].shopname}}" data-shopaddress="{{sp[0].shopaddress}}"/>
+</view>
+<view class="dianpu">
+  <view>全部作品</view>
+  <view class="dpkind" wx:for="{{sp}}" wx:key="id">
+    <view bindtap="readDetail" data-id="{{item.pid}}" data-shopid="{{item.shopid}}" data-styleid="{{item.styleid}}">
+      <image src="{{item.pimage1}}" class="dpkind1" mode="heightFix" />
+    </view>
+    <view class="dpkind2" bindtap="readDetail" data-id="{{item.pid}}" data-shopid="{{item.shopid}}"
+      data-styleid="{{item.styleid}}">
+      {{item.name}}
+    </view>
+  </view>
+</view>

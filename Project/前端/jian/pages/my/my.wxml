@@ -1,0 +1,97 @@
+<!--pages/my/my.wxml-->
+<!-- <text>pages/my/my.wxml</text> -->
+<view class="back">
+
+<view class="top">
+  <view class="top1">
+    Love Date
+  </view>  
+  <navigator url="/pages/timer/timer" open-type="navigate">
+    <view class="top2">
+      距您的婚礼还有<div class="tdata">{{fardata}}</div>天
+      <image src="../../icon/my/pen.png" class="pen"></image>
+    </view>  
+  </navigator>
+
+  <view class="userinfo">
+      <block class="user1">
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{inputImage}}" mode="cover"></image>
+        <text class="userinfo-nickname" bindtap="bindViewTap">{{inputValue}}</text>
+        <!-- <text class="userinfo-nickname1" bindtap="bindViewTap">个人信息</text>
+        <image src="/icon/my/xiayiye.png" bindtap="bindViewTap" class="userinfo-nickname2"></image> -->
+      
+      </block>
+  </view>
+
+</view>
+
+<view class="body">
+  <view class="body1">
+    <navigator url="/pages/shower/shower" open-type="navigate">
+      <view class="ch01">
+        <image src="/icon/my/yifabu.png" class="xiaoxi"></image>
+        <text class="wxiaoxi">已发布</text>
+      </view>
+    </navigator>
+  
+    <navigator url="/pages/shoucang/shoucang" open-type="navigate">
+      <view class="ch02" >
+        <image src="/icon/my/shoucang.png" class="shoucang"></image>
+        <text class="wshoucang">已收藏</text>
+      </view>
+    </navigator>
+    
+    <navigator url="/pages/memorandum/memorandum" open-type="navigate">
+      <view class="ch03">
+        <image src="/icon/my/shu.png" class="shezhi"></image>
+        <text class="wshezhi">备忘录</text>
+      </view>
+    </navigator>
+
+  </view>
+
+  <view class="body2">
+    
+    <view class="plans">
+      <image src="/icon/my/1.png" class="plan1"></image>
+      <text class="plan2">备婚计划</text>
+    </view>  
+    <navigator url="/pages/planning/planning" open-type="navigate">
+      <view class="plans1">  <image src="/icon/my/xiayiye.png" class="plan3"></image></view>  
+    </navigator>
+  </view>
+
+  <view class="body3">
+    <view class="cost">
+      <image src="/icon/my/2.png" class="cost1"></image>
+      <text class="cost2">婚礼账本</text>
+    </view> 
+    <navigator url="/pages/diary/diary" open-type="navigate">
+      <view class="costs">  <image src="/icon/my/xiayiye.png" class="cost3"></image></view>  
+    </navigator>
+  </view>
+  
+  
+  <view class="body4" >
+    <view class="talk">
+      <image src="/icon/my/3.png" class="talk1"></image>
+      <text class="talk2">宣言誓言</text>
+    </view> 
+    <navigator url="/pages/declare/declare" open-type="navigate">
+      <view class="talks">  <image src="/icon/my/xiayiye.png" class="talk3"></image></view>  
+    </navigator>
+  </view>
+
+  <view class="body5" >
+    <view class="connect">
+      <image src="/icon/my/4.png" class="connect1"></image>
+      <text class="connect2">联系我们</text>
+    </view> 
+    <navigator url="/pages/introduce/introduce" open-type="navigate">
+      <view class="connects">  <image src="/icon/my/xiayiye.png" class="connect3"></image></view>  
+    </navigator>
+  </view>
+
+</view>
+
+</view>

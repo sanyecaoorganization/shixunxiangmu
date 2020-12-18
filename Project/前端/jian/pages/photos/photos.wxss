@@ -1,0 +1,26 @@
+/* pages/photos/photos.wxss */
+.dianpu{
+  margin-top: 0rpx;
+  margin-bottom: 100rpx;
+
+}
+.dpkind{
+  width:340rpx;
+  height:450rpx;
+  display: inline-block;
+  border:1px solid gainsboro;
+  margin-left: 20rpx;
+  margin-top: 30rpx;
+  border-radius: 40rpx;
+  overflow: hidden;
+}
+.dpkind1 {
+  height:350rpx;
+  text-align: center;
+}
+.dpkind2 {
+  /* height:100rpx;
+  line-height: 100rpx; */
+  font-size:12px;
+  text-align: center;
+}

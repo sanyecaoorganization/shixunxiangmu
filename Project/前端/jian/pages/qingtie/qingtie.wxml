@@ -1,0 +1,19 @@
+<!--pages/qingtie/qingtie.wxml-->
+<view class="container">
+  <view class="remind-box" wx:if="{{remind}}">
+    <image class="remind-img" src="{{loading}}"></image>
+  </view>
+  <block wx:else>
+  <text class="title">{{appName}}</text>
+  <text class="title1">{{appName1}}</text>
+    <view class="content">
+      <view class="hd" style="transform:rotateZ({{angle}}deg);">
+          <image class="logo" src="{{logo}}"></image>
+          <image class="wave" src="{{wave}}" mode="aspectFill"></image>
+          <image class="wave wave-bg" src="{{wave}}" mode="aspectFill"></image>
+      </view>
+    <button class="confirm-btn" form-type="submit" bindtap="btnEnter" >点击进入</button>
+    </view>
+  </block>
+</view>
+

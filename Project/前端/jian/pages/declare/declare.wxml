@@ -1,0 +1,30 @@
+<!--pages/declare/declare.wxml-->
+<!-- <text>pages/declare/declare.wxml</text> -->
+
+<view class="decg">
+  <view class="decimg">
+    <image src="/icon/my/decimg.jpg" class="dec"></image>
+  </view>
+</view>
+
+ <view class="poems">
+ 
+<view class="uplink">
+    <scroll-view scroll-x scroll-with-animation scroll-left="{{scrollLefts}}" class="scroll-top" style="overflow:hidden;white-space:nowrap;">
+        <view class="top-item {{curIndex===index?'active':''}}" wx:for="{{list}}" wx:key="index" data-index="{{index}}" bindtap="tabNav">{{item}}</view>
+    </scroll-view>
+    <swiper class="swiper" current="{{curIndex}}" bindchange="changeScroll" duration="{{duration}}">
+        <swiper-item wx:for="{{type}}" wx:key="index" class="swipers-item">
+          <view class="swipers-word"><image src='{{item.type1}}' class="swipers-img1"></image></view> 
+          <view class="swipers-word"><image src='{{item.type2}}' class="swipers-img1"></image></view> 
+          <view class="swipers-word"><image src='{{item.type3}}' class="swipers-img1"></image></view> 
+          <view class="swipers-word"><image src='{{item.type4}}' class="swipers-img1"></image></view> 
+          <view class="swipers-word"><image src='{{item.type5}}' class="swipers-img1"></image></view> 
+          <view class="swipers-word"><image src='{{item.type6}}' class="swipers-img1"></image></view> 
+        </swiper-item>
+    </swiper>
+</view>
+
+</view> 
+
+

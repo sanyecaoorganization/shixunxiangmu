@@ -1,0 +1,24 @@
+<!--pages/login/login.wxml-->
+<!-- <text>pages/login/login.wxml</text> -->
+<view class="container">
+  <view class="back">
+    <image src="http://m.qpic.cn/psc?/V51gGRBp3f1Y6e2WYQCi2qIqIj05OBnb/ruAMsa53pVQWN7FLK88i5oC5DItRxF7CnkaRZNqvcyAPMCBR1tcPkRvXOSisbfNMBYeWOHmolo2C.7*buOERg1VuWV94z3ucwtsubYSmAsw!/b&bo=6APzBugD8wYBCS4!&rf=viewer_4" class="backimg" />
+  </view>
+  <form bindsubmit="previewData">
+    <view class="fr">
+      <input type="text" bindinput="bindTextInput" name="title" value="{{inputValue}}" placeholder-style="color:white" placeholder="用户名"/>
+      <input type="password" bindinput="bindContentInput" name="content" value="{{inputValue1}}" placeholder-style="color:white" placeholder="密码" />
+    </view>
+    <view>
+      <!-- <button form-type="submit" class="log">登录</button> -->
+      <button form-type="submit" class="log" disabled="{{disabled}}" style="background-color:{{loginBtnBgBgColor}}"   formType="submit"  loading="{{btnLoading}}">{{loginBtnTxt}} </button>
+      <view bindtap="forgot"><text class="forgot-password">忘记密码？</text></view>
+      <view bindtap="zhuce"><text class="register">注册账号</text></view>
+      <!-- <navigator redirect url="/pages/login2/login2"><text class="register">注册账号</text></navigator> -->
+    </view>
+  </form>
+  <view class="look" bindtap="sb">
+    仅浏览
+    <!-- <navigator open-type="navigate" url="/pages/index/index"><text class="look">仅浏览</text></navigator> -->
+  </view>
+</view>

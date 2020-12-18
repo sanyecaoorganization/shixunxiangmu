@@ -1,0 +1,28 @@
+<!--page/que/que.wxml-->
+<view>
+  <button size="mini" style="margin:8px 2px" bindtap="btnTest">取消</button>
+  <button class="btn2"  size="mini" bindtap="btnTest2" data-values="{{inputVal}}" data-photos="{{imagePath}}" data-indexid="{{indexid}}">发布</button>
+
+  <view class="inpp">
+    <input class="inp" bindinput="queValue"  auto-focus placeholder="请写下你的问题"/>
+    <view class="interestsCategories">
+      <text class="tagcon">选择标签获得更快解答~</text>
+        <!-- <view class="tagContainer" wx:for="{{interestsCategories}}" wx:key="item[0]">
+          <view class="tag {{item[1]? 'active':''}}" data-tag="{{item[0]}}" bindtap="selectCategories" data-index="{{index}}" id="{{item}}">#{{item[0]}}</view>
+        </view> -->
+        <view class='content'>
+  <block class="tagContainer" wx:for="{{interestsCategories}}" wx:key="item[0]">
+    <view  class="tag {{item[1]? 'active':''}}" data-tag="{{item[0]}}" style="background-color:{{randomColorArr[item[2]]}}" bindtap="selectCategories" data-index="{{index}}" id="{{item}}">#{{item[0]}}</view>
+  </block>
+</view>
+      </view>
+    <view class="imags">
+      <image class="imag" src="{{imagePath}}"></image>
+    </view>
+    <view class="pho">   
+      <mp-icon icon="add" color="gray" size="{{30}}" extClass="phoo" bindtap="selectImage"></mp-icon>
+      
+    </view>
+  </view>
+  
+</view>

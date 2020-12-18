@@ -1,0 +1,52 @@
+
+<view class="container1">
+    <view class="add">
+        <image src="/icon/my/shuru.png"  bindtap="addTodoListListen"/>
+        <input type="text"  placeholder="请输入" value="{{ add }}" bindinput="inputChangeListen" bindconfirm="addTodoListListen" focus="true"/>
+        <image src="/icon/my/tian.png"  bindtap="addTodoListListen" class="tian"/>
+    </view>
+     
+    <view class="doing">
+        <image src="/icon/my/weiwan.png" class="doingimg"></image>
+        <text class="doingtext"> 待完成 ({{ leftcount }})</text>
+        <text bindtap="tpggleAllListen" class="footer3">选择全部</text>
+    </view>
+     
+    <block wx:if="{{todolist.length}}">
+        <view class="todoslist">
+            <view class="item"  wx:for="{{todolist}}" bindtap="toggleToDoListen"
+            data-index="{{index}}">
+                <icon type="{{ item.state ? 'success' : 'circle'}}"/>
+                <text >{{item.content}}</text>
+                <icon type="clear" size="16" catchtap="removeItemListen" data-index="{{index}}"/>
+            </view>
+        </view>   
+    </block>
+     
+    <view class="completed">
+        <image src="/icon/my/yiwan.png" class="doingimg2"></image>
+        <text class="completedtext">已完成 ({{completedcount}})</text>
+        <text bindtap="clearListen" class="footer3">删除全部</text>
+
+    </view>
+     
+    <block wx:if="{{completedList.length}}">
+        <view class="completedlist">
+            <view class="completeditem" wx:for="{{completedList}}" 
+            bindtap="completedItemClickListen" data-index="{{index}}">
+                <icon type="success" color="lightgray" />
+                <text >{{item.content}}</text>
+                <icon type="clear" size="16" data-index="{{index}}" catchtap="removecompletedItemListen"/>
+            </view>
+        </view>
+    </block>
+    
+</view>
+
+<view>
+    <button bindtap="keep" class=" keep1">保存</button>
+</view>
+
+
+
+

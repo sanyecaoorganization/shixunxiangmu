@@ -1,0 +1,53 @@
+/* pages/login/login.wxss */
+.backimg{ 
+  position:absolute; 
+  top:0rpx;
+  left:0rpx;
+  width:100%;
+  height:100%;
+  z-index:-1;  
+  /* Z-index 可用于将在一个元素放置于另一元素之后。  */
+}
+.log{
+  position: absolute;
+  left:170rpx;
+  top:600rpx;
+  background-color: rgba(255,255,255,0.4);
+  color:white;
+}
+.forgot-password{
+  position: absolute;
+  top:800rpx;
+  left:110rpx;
+  font-size:12px;
+  color:white;
+}
+.register{
+  position: absolute;
+  top:800rpx;
+  left:550rpx;
+  font-size:12px;
+  color:white;
+}
+
+.look{
+  position: absolute;
+  left:170rpx;
+  top:1000rpx;
+  width:440rpx;
+  height:100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  border-radius: 50rpx;
+  font-size:15px;
+  font-weight: bold;
+  background-color: rgba(255,255,255,0.4);
+  color:white;
+}
+.fr{
+  margin-top: 60rpx;
+}
+.fr input{
+  margin-top: 20rpx;
+  color:white;
+}

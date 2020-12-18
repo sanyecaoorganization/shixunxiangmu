@@ -1,0 +1,225 @@
+/**index.wxss**/
+page{
+  height:100%;
+  background-color:rgb(231, 231, 231);
+}
+.address{
+  height:70rpx;
+  background-color: white;
+  /* border:1px solid red; */
+}
+
+.address image{
+  width:70rpx;
+}
+
+#address{
+  position: absolute;
+  top:0px ;
+  left:70rpx;
+  /* border:1px solid red; */
+  height:70rpx;
+  line-height: 70rpx;
+  /* text-align: center; */
+  width:250rpx;
+  font-size:14px;
+  color:black;
+}
+
+.container{
+  margin-top:20rpx;
+  /* border:1px solid red; */
+  background-color:white;
+  padding-bottom: 0px;
+}
+
+
+.photo{
+  position: absolute;
+  top:120rpx;
+  left:40rpx;
+  width:120rpx;
+  height: 120rpx;
+  /* border:1px solid red; */
+}
+.photo image{
+  position: absolute;
+  left:15rpx;
+  top:10rpx;
+  height:90rpx;
+  margin-bottom: 0;
+  /* border:1px solid red; */
+}
+.photo text{
+  position: absolute;
+  left:2rpx;
+  top:100rpx;
+  width:150rpx;
+  font-size: 12px;
+}
+
+.plan{
+  position: absolute;
+  top:120rpx;
+  left:190rpx;
+  width:120rpx;
+  height: 120rpx;
+  /* border:1px solid red; */
+}
+.plan image{
+  position: absolute;
+  top:10rpx;
+  left:10rpx;
+  height:90rpx;
+  margin-bottom: 0;
+}
+.plan text{
+  position: absolute;
+  top:100rpx;
+  width:150rpx;
+  font-size: 12px;
+}
+
+.dress{
+  position: absolute;
+  top:120rpx;
+  left:320rpx;
+  width:120rpx;
+  height: 120rpx;
+  /* border:1px solid red; */
+}
+.dress image{
+  position: absolute;
+  top:10rpx;
+  left:20rpx;
+  height:90rpx;
+  margin-bottom: 0;
+}
+.dress text{
+  position: absolute;
+  top:100rpx;
+  left:8rpx;
+  width:150rpx;
+  font-size: 12px;
+}
+
+.qing{
+  position: absolute;
+  top:120rpx;
+  left:460rpx;
+  width:120rpx;
+  height: 120rpx;
+  /* border:1px solid red; */
+}
+.qing image{
+  position: absolute;
+  top:10rpx;
+  left:20rpx;
+  height:90rpx;
+  margin-bottom: 0;
+}
+.qing text{
+  position: absolute;
+  top:100rpx;
+  left:8rpx;
+  width:150rpx;
+  font-size: 12px;
+}
+
+
+.mi{
+  position: absolute;
+  top:120rpx;
+  left:600rpx;
+  width:120rpx;
+  height: 120rpx;
+  /* border:1px solid red; */
+}
+.mi image{
+  position: absolute;
+  top:10rpx;
+  left:20rpx;
+  height:90rpx;
+  margin-bottom: 0;
+}
+.mi text{
+  position: absolute;
+  top:100rpx;
+  left:8rpx;
+  width:150rpx;
+  font-size: 12px;
+}
+
+
+
+
+
+.shaixuan{
+  margin-top: 30rpx;
+  background-color: white;
+  padding-bottom: 50rpx;
+}
+
+.nav {
+  /* border:1px solid red; */
+  height: 80rpx;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  line-height: 80rpx;
+  /* background: #f7f7f7; */
+  font-size: 16px;
+  white-space: nowrap;
+  /* position: fix;
+  top: 0;
+  left: 0; */
+  z-index: 99;
+}
+.nav-item {
+  font-size:14px;
+  padding-left: 40rpx;
+  display: inline-block;
+  text-align: center;
+}
+.nav-item.active{
+  color: rgb(236, 116, 18);
+}
+
+.dianpu{
+  /* position: absolute;
+  top:100rpx;
+  left:0px; */
+  /* border:1px solid red; */
+  margin-bottom: 100rpx;
+}
+.dpkind{
+  width:85%;
+  height:200rpx;
+  /* display: inline-block; */
+  border:1px solid gainsboro;
+  margin-left: 40rpx;
+  margin-top: 30rpx;
+  /* border-radius: 40rpx; */
+  overflow: hidden;
+}
+.dpkind1 {
+  position: relative;
+  left:10rpx;
+  top:10rpx;
+  height:180rpx;
+  text-align: center;
+}
+.dpkind2 {
+  position: relative;
+  top:-140rpx;
+  left:100rpx;
+  font-size:12px;
+  text-align: center;
+}
+.dpkind3 {
+  position: relative;
+  top:-120rpx;
+  left:100rpx;
+  font-size:12px;
+  text-align: center;
+}

@@ -1,0 +1,41 @@
+<!--pages/diary/diary.wxml-->
+<!-- <text>pages/diary/diary.wxml</text> -->
+<view class="diary">
+  <!-- <view class="topbanner"> 
+    <image src="/icon/banner.jpg" class="topbanner1"></image>
+  </view> -->
+
+  <view class="consumption">
+    <view class="consumption1">消费支出</view>
+    <view class="consumption1">￥ {{accountTotal}}</view>
+    <navigator url="/pages/diarys/diarys" open-type="navigate">
+      <view class="consumption2">记支出</view>
+    </navigator>
+  </view>
+
+  <view class="income">
+    <view class="income1">礼金收入</view>
+    <view class="income1">￥{{accountTotals}}</view>
+    <navigator url="/pages/diaryrs/diaryrs" open-type="navigate">
+      <view class="income2">记礼金</view>
+    </navigator>
+  </view>
+
+  <view class="tongzhi">
+    <view class="tongzhi1">Hi，通过结婚账本，你可以：</view>
+    <view class="tongzhi2"><image src="/icon/my/duigou.png" class="duigou"></image> 随时随地记录备婚开销</view>
+    <view class="tongzhi2"><image src="/icon/my/duigou.png" class="duigou"></image> 合理控制预算</view>
+    <view class="tongzhi2"><image src="/icon/my/duigou.png" class="duigou"></image> 掌握开销动态</view>
+  </view>
+
+  
+
+    <view class="begin">
+      <navigator url="/pages/diarycam/diarycam" open-type="navigate">
+        <view class="begin1" >拍照记账</view>
+      </navigator>
+    </view>
+
+
+
+</view>

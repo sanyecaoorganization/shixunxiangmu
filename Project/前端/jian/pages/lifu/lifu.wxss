@@ -1,0 +1,92 @@
+/* pages/lifu/lifu.wxss */
+.container{
+  width:100%;
+  margin: 0 auto;
+  /* border:1px solid red; */
+  padding-top: 0rpx;
+  padding-bottom: 0rpx;
+}
+
+.mo{
+  margin-bottom: 10rpx;
+}
+p{
+  display: inline-block;
+}
+.mor{
+  padding-left: 20rpx;
+}
+/* .more{
+  position: relative;
+  left:455rpx;
+  color:rgb(124, 120, 120);
+  font-size: 35rpx;
+  text-shadow: 1rpx 1rpx 2rpx rgb(167, 163, 163),2rpx 2rpx 2rpx rgb(199, 196, 196);
+} */
+.hun1{
+  width:270rpx;
+  position: absolute;
+  top:100rpx;
+  left:60rpx;
+  /* border:1px solid rgb(214, 211, 211); */
+  overflow:hidden;
+}
+.hun4{
+  width:270rpx;
+  position: absolute;
+  top:100rpx;
+  right:60rpx;
+  /* border:1px solid rgb(214, 211, 211); */
+  overflow:hidden;
+}
+.hun3{
+  width:270rpx;
+  position: absolute;
+  top:550rpx;
+  left:60rpx;
+  /* border:1px solid rgb(214, 211, 211); */
+  overflow:hidden;
+}
+.hun2{
+  width:270rpx;
+  position: absolute;
+  top:550rpx;
+  right:60rpx;
+  /* border:1px solid rgb(214, 211, 211); */
+  overflow:hidden;
+}
+.h1{ 
+  border-radius:20px;
+  position: relative; 
+  width:100%;
+  top:0rpx;
+  left:0rpx;
+  z-index:-1;  
+  /* Z-index 可用于将在一个元素放置于另一元素之后。  */
+}
+.h1w{
+  position: absolute;
+  left:250rpx;
+  top:120rpx;
+  color:rgb(7, 7, 7);
+}
+.h4w{
+  position: absolute;
+  /* border:1px solid red; */
+  top:120rpx;
+  left:610rpx;
+  
+  color:rgb(7, 7, 7);
+}
+.h3w{
+  position: absolute;
+  left:250rpx;
+  top:580rpx;
+  color:rgb(7, 7, 7);
+}
+.h2w{
+  position: absolute;
+  left:610rpx;
+  top:580rpx;
+  color:rgb(7, 7, 7);
+}
